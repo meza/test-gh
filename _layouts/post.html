@@ -22,7 +22,7 @@ layout: default
 			  {{ post.summary }}
 		  </section>
 		  <footer>
-			  <div class="category {{ post.category }}"></div>
+			  <div class="categories">{% for category in post.categories %}<span>{{ category }}</span>{% endfor %}</div>
 			  <a href="{{ post.url }}">Read
 				  article</a>
 		  </footer>

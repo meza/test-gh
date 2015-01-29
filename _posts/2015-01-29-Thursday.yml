@@ -9,13 +9,16 @@ articles:
     title: "Beat The System With This List Of 40 Free Educational Websites"
     author: "designhorf"
     summary: "Apam a mai napig mondogatja, hogy a mi generacionk legnagyobb kincse az internet es a benne rejlo lehetosegek. Szamara es szamomra is ez az oldal egy jo bizonyiteka ennek."
-    category: "education"
+    categories:
+      - "education"
     url: "http://www.iheartintelligence.com/2014/01/18/beat-the-system-40-free-educational-websites/"
     picture: "http://www.iheartintelligence.com/wp-content/uploads/2014/01/erbooks-1024x600.jpg"
   -
     title: "Walk up and use anything"
     author: "meza"
     summary: "Nagyon jo kezdemenyezes annak erdekeben, hogy mindent kutyut ami mar a neten log _egyszeruen_ lehessen hasznalni barkinek, barhol. Arrol nem is beszelve, hogy bluetooth kutyukon alapul, amihez mar nem keves kozunk volt @matta -val :simple_smile:"
-    category: "future"
+    categories:
+      - "future"
+      - "internet of things"
     url: "http://google.github.io/physical-web/"
 ---
