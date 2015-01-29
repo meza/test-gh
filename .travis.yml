@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.2
-script: jekyll build
+script: bundle exec jekyll build
 # branch whitelist
 branches:
   only:
