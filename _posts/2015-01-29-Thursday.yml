@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "28/01/2015 - Thursday"
+date:   2015-01-28 15:41:20
+categories: education, future, internet of things
+
+articles:
+  -
+    title: "Beat The System With This List Of 40 Free Educational Websites"
+    author: "designhorf"
+    summary: "Apam a mai napig mondogatja, hogy a mi generacionk legnagyobb kincse az internet es a benne rejlo lehetosegek. Szamara es szamomra is ez az oldal egy jo bizonyiteka ennek."
+    category: "education"
+    url: "http://www.iheartintelligence.com/2014/01/18/beat-the-system-40-free-educational-websites/"
+  -
+    title: "Walk up and use anything"
+    author: "meza"
+    summary: "Nagyon jo kezdemenyezes annak erdekeben, hogy mindent kutyut ami mar a neten log _egyszeruen_ lehessen hasznalni barkinek, barhol. Arrol nem is beszelve, hogy bluetooth kutyukon alapul, amihez mar nem keves kozunk volt @matta -val :simple_smile:"
+    category: "future"
+    url: "http://google.github.io/physical-web/"
+---

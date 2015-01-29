@@ -9,7 +9,23 @@ layout: default
   </header>
 
   <article class="post-content">
-    {{ content }}
+	  {% for post in page.articles %}
+	  <article>
+		  <header>
+			  <div class="title">{{ post.title }}</div>
+			  <div class="author">{{ post.author }}</div>
+		  </header>
+		  <section>
+			  {{ post.summary }}
+		  </section>
+		  <footer>
+			  <div class="category {{ post.category }}"></div>
+			  <a href="{{ post.url }}">Read
+				  article</a>
+		  </footer>
+	  </article>
+	  {% endfor %}
+
   </article>
 
 </div>
