@@ -16,6 +16,8 @@ layout: default
 			  <div class="author">{{ post.author }}</div>
 		  </header>
 		  <section>
+			  {% if post.picture %}
+			    <img src="{{ post.picture }}"/><br/>
 			  {{ post.summary }}
 		  </section>
 		  <footer>
