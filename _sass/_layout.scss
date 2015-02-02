@@ -197,13 +197,6 @@
     background-color: #fff;
     border-radius: 17px;
     padding: 35px;
-
-    margin: 0 2%;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
 }
 
 .post-header {
@@ -226,19 +219,29 @@
     // margin-bottom: $spacing-unit;
     margin: 0 2%;
 
-    // @include mq($on-palm, $on-laptop) {
-    @include media-query($on-palm) {
-        width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    article {
+        margin: 0 2%;
+        
+        // @include mq($on-palm, $on-laptop) {
+        @include media-query($on-palm) {
+            width: 45%;
+        }
+
+        // @include mq($on-laptop, $desktop) {
+        @include media-query($on-laptop) {
+            width: 28%;
+        }
+
+        @include media-query($desktop) {
+            width: 20%;
+        }   
     }
 
-    // @include mq($on-laptop, $desktop) {
-    @include media-query($on-laptop) {
-        width: 28%;
-    }
-
-    @include media-query($desktop) {
-        width: 20%;
-    }   
 
 
     h2 {
