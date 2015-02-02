@@ -10,23 +10,31 @@ layout: default
 
   <article class="post-content">
 	  {% for post in page.articles %}
-	  <article>
-		  <header>
-			  <div class="title">{{ post.title }}</div>
-			  <div class="author">{{ post.author }}</div>
-		  </header>
-		  <section>
+
+	  <article class="post-box">
+	  	  <section class="post-picture">
 			  {% if post.picture %}
 			    <img src="{{ post.picture }}"/><br/>
 			  {% endif %}
-			  {{ post.summary }}
 		  </section>
-		  <footer>
+		  <section class="post-recommendation">
+			  <div class="post-header bottom-space">
+				  <div class="title">{{ post.title }}</div>
+				  <div class="author">{{ post.author }}</div>
+			  </div>
+			  <div class="post-summary">
+			  		{{ post.summary }}
+			  </div>
+		  </section>
+		  <!-- <footer>
 			  <div class="categories">{% for category in post.categories %}<span>{{ category }}</span>{% endfor %}</div>
 			  <a href="{{ post.url }}">Read
 				  article</a>
-		  </footer>
+		  </footer> -->
+		  <button class="post-button">
+		  </button>
 	  </article>
+	  
 	  {% endfor %}
 
   </article>
