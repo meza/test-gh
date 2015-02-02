@@ -25,7 +25,7 @@ bad. Very bad!
 __To remedy this, we've came up with a practice that gives us a little perspective
 and a way out.__
 
-> ## Every day, share one - and only one - article with the team and explain why we should read it!
+> ## Every day, share one - and only one - article with the team and explain why they should read it!
 
 ### The rules are:
 1. The article has to be either:
