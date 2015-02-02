@@ -31,7 +31,7 @@ and a way out.__
 1. The article has to be either:
  - relevant to our profession or self-development
  - relevant to our everyday lives (significant world politics, etc)
- - creativity booster to the person who's sharing it
+ - creativity booster for the person who's sharing it
 2. You have to write a few sentences where you summarise why you chose that particular article
 3. Participation is not compulsory, but if you do participate, do it every day!
 
