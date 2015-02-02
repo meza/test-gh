@@ -22,10 +22,11 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+// $content-width:    90%;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+$desktop:										1600px;
 
 
 
@@ -37,15 +38,22 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media screen and (min-width: $device) {
         @content;
     }
+}
+
+@mixin mq($device1, $device2) {
+				@media screen and (min-width: $device1) and (max-width: $device2) {
+								@content;
+				}
 }
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "colors",
         "base",
         "layout",
         "syntax-highlighting"
