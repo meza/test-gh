@@ -194,6 +194,17 @@
     height: 420px;
     margin: 0 0 2em;
     overflow: hidden;
+
+    .post--header {
+        margin-top: 1.5em;
+        padding: 0 1.5em;
+        text-align: center;
+
+        h1 {
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+    }
     
     .post-picture,
     .post-recommendation {
@@ -204,11 +215,6 @@
 
     .post-recommendation {
         background-color: $white;
-
-        .post--header {
-            margin-top: 1em;
-            text-align: center;
-        }
 
         .post--category {
             img {
@@ -226,6 +232,7 @@
         background-color: $dflt-green;
         border: 0;
         cursor: pointer;
+        float: left;
         height: 35px;
         padding: 0;
         position: relative;

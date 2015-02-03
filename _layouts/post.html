@@ -18,14 +18,13 @@ layout: default
 			{% else %}
 				<article class="post-box col-1">
 			{% endif %}
-					<!-- {% if post.picture %}
-						
-					{% endif %} -->
 					<section class="post-recommendation">
-						<div class="post--header bottom-space">
-							<div class="title">{{ post.title }}</div>
-							<div class="author">{{ post.author }}</div>
-						</div>
+						
+						<header class="post--header bottom-space">
+							<h1 class="title">{{ post.title }}</h1>
+							<!-- <div class="author">{{ post.author }}</div> -->
+						</header>
+						
 						<div class="post--category bottom-space">
 							<img src="/assets/science.png" title="Category - Science" alt="science" height="14" width="15" />
 						</div>
@@ -34,14 +33,9 @@ layout: default
 						</div>
 					</section>
 
-					<!-- <footer>
-					  <div class="categories">{% for category in post.categories %}<span>{{ category }}</span>{% endfor %}</div>
-					  <a href="{{ post.url }}">Read
-						  article</a>
-					</footer> -->
-					<button class="post-button">
-						<a href="{{ post.url }}" target="_blank">read article</a>
-					</button>
+					<footer class="post-button">
+							<a href="{{ post.url }}" target="_blank">read article</a>
+					</footer>
 				</article>
 		{% endfor %}
 	</article>
