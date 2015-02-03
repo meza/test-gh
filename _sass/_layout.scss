@@ -227,14 +227,19 @@
         border: 0;
         cursor: pointer;
         height: 35px;
+        padding: 0;
         position: relative;
         top: -35px;
         width: 100%;
 
-        span {
+        a {
             color: $white;
+            display: block;
             font-size: 1.1rem;
+            height: inherit;
+            padding-top: 6px;
             text-align: center;
+            text-decoration: none;
             text-transform: uppercase;
         }
 
