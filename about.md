@@ -25,13 +25,13 @@ bad. Very bad!
 __To remedy this, we've came up with a practice that gives us a little perspective
 and a way out.__
 
-> ## Every day, share one - and only one - article with the team and explain why we should read it!
+> ## Every day, share one - and only one - article with the team and explain why they should read it!
 
 ### The rules are:
 1. The article has to be either:
  - relevant to our profession or self-development
  - relevant to our everyday lives (significant world politics, etc)
- - creativity booster to the person who's sharing it
+ - creativity booster for the person who's sharing it
 2. You have to write a few sentences where you summarise why you chose that particular article
 3. Participation is not compulsory, but if you do participate, do it every day!
 
