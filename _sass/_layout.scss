@@ -88,73 +88,7 @@
 
 
 
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-}
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
 
 
 
@@ -220,7 +154,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 0 2%;
+    // margin: 0 2%;
 
     h2 {
         font-size: 32px;
@@ -252,24 +186,9 @@
     border-radius: 15px;
     box-sizing: border-box;
     height: 420px;
-    margin: 0 2.5% 3%;
+    margin: 0 0 3%;
     overflow: hidden;
     
-    // @include mq($on-palm, $on-laptop) {
-    @include media-query($on-laptop) {
-        width: 45%;
-    }
-
-    // @include mq($on-laptop, $desktop) {
-    @include media-query($on-laptop) {
-    //     width: 28%;
-    }
-
-    @include media-query($desktop) {
-        margin: 0 2%;
-        width: 20%;
-    }
-
     .post-picture,
     .post-recommendation {
         float: left;
@@ -278,7 +197,7 @@
     }
 
     .post-recommendation {
-        background-color: #fff;
+        background-color: $white;
 
         .post--header {
             margin-top: 1em;
@@ -300,19 +219,57 @@
     .post-button {
         background-color: $dflt-green;
         border: 0;
-        border-radius: 0 0 15px 15px;
+        cursor: pointer;
         height: 35px;
         position: relative;
         top: -35px;
         width: 100%;
 
         span {
-            color: #fff;
+            color: $white;
             font-size: 1.1rem;
             text-align: center;
             text-transform: uppercase;
         }
+
+        &:hover {
+            background-color: darken($dflt-green, 10%);
+        }
     }
+}
+
+
+.col-1 {
+    width: 100%;
+
+    @include media-query($on-laptop) {
+        margin: 0 2.5% 3%;
+        width: 45%;
+    }
+
+    @include media-query($desktop) {
+        margin: 0 1.25% 3%;
+        width: 22.5%;
+    }
+}
+
+.col-2 {
+    width: 100%;
+
+    .post-recommendation {
+        width: 100%;
+    }
+
+    @include media-query($on-laptop) {
+        margin: 0 1.25% 3%;
+        width: 22.5%;
+    }
+
+    @include media-query($desktop) {
+        margin: 0 0.75% 3%;
+        width: 11%;
+    }
+
 }
 
 .bottom-space {

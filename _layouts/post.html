@@ -10,35 +10,39 @@ layout: default
 
 	<article class="post-content">
 		{% for post in page.articles %}
-			<article class="post-box">
-				{% if post.picture %}
+			{% if post.picture %}
+				<article class="post-box col-1">
 					<section class="post-picture">
 						<img src="{{ post.picture }}"/><br/>
 					</section>
-				{% endif %}
+			{% else %}
+				<article class="post-box col-2">
+			{% endif %}
+					<!-- {% if post.picture %}
+						
+					{% endif %} -->
+					<section class="post-recommendation">
+						<div class="post--header bottom-space">
+							<div class="title">{{ post.title }}</div>
+							<div class="author">{{ post.author }}</div>
+						</div>
+						<div class="post--category bottom-space">
+							<img src="/assets/science.png" title="Category - Science" alt="science" height="14" width="15" />
+						</div>
+						<div class="post-summary">
+							{{ post.summary }}
+						</div>
+					</section>
 
-				<section class="post-recommendation">
-					<div class="post--header bottom-space">
-						<div class="title">{{ post.title }}</div>
-						<div class="author">{{ post.author }}</div>
-					</div>
-					<div class="post--category bottom-space">
-						<img src="/assets/science.png" height="14" width="15" />
-					</div>
-					<div class="post-summary">
-						{{ post.summary }}
-					</div>
-				</section>
-
-				<!-- <footer>
-				  <div class="categories">{% for category in post.categories %}<span>{{ category }}</span>{% endfor %}</div>
-				  <a href="{{ post.url }}">Read
-					  article</a>
-				</footer> -->
-				<button class="post-button">
-					<span>read article</span>
-				</button>
-			</article>
+					<!-- <footer>
+					  <div class="categories">{% for category in post.categories %}<span>{{ category }}</span>{% endfor %}</div>
+					  <a href="{{ post.url }}">Read
+						  article</a>
+					</footer> -->
+					<button class="post-button">
+						<span>read article</span>
+					</button>
+				</article>
 		{% endfor %}
 	</article>
 
