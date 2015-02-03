@@ -3,40 +3,40 @@ layout: default
 ---
 <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+	<header class="post-header">
+		<h1 class="post-title">{{ page.title }}</h1>
+		<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+	</header>
 
-  <article class="post-content">
-	  {% for post in page.articles %}
+	<article class="post-content">
+		{% for post in page.articles %}
+			<article class="post-box">
+				{% if post.picture %}
+					<section class="post-picture">
+						<img src="{{ post.picture }}"/><br/>
+					</section>
+				{% endif %}
 
-	  <article class="post-box">
-	  	  <section class="post-picture">
-			  {% if post.picture %}
-			    <img src="{{ post.picture }}"/><br/>
-			  {% endif %}
-		  </section>
-		  <section class="post-recommendation">
-			  <div class="post-header bottom-space">
-				  <div class="title">{{ post.title }}</div>
-				  <div class="author">{{ post.author }}</div>
-			  </div>
-			  <div class="post-summary">
-			  		{{ post.summary }}
-			  </div>
-		  </section>
-		  <!-- <footer>
-			  <div class="categories">{% for category in post.categories %}<span>{{ category }}</span>{% endfor %}</div>
-			  <a href="{{ post.url }}">Read
-				  article</a>
-		  </footer> -->
-		  <button class="post-button">
-		  </button>
-	  </article>
-	  
-	  {% endfor %}
+				<section class="post-recommendation">
+					<div class="post-header bottom-space">
+						<div class="title">{{ post.title }}</div>
+						<div class="author">{{ post.author }}</div>
+					</div>
+					<div class="post-summary">
+						{{ post.summary }}
+					</div>
+				</section>
 
-  </article>
-
+				<!-- <footer>
+				  <div class="categories">{% for category in post.categories %}<span>{{ category }}</span>{% endfor %}</div>
+				  <a href="{{ post.url }}">Read
+					  article</a>
+				</footer> -->
+				<button class="post-button">
+				<span></span>
+				</button>
+			</article>
+		{% endfor %}
+	</article>
+	
 </div>

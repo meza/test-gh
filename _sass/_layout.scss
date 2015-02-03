@@ -253,6 +253,7 @@
     background-color: lightblue;
     border-radius: 15px;
     box-sizing: border-box;
+    height: 350px;
     margin: 0 2.5% 3%;
     
     // @include mq($on-palm, $on-laptop) {
@@ -261,9 +262,9 @@
     }
 
     // @include mq($on-laptop, $desktop) {
-    // @include media-query($on-laptop) {
+    @include media-query($on-laptop) {
     //     width: 28%;
-    // }
+    }
 
     @include media-query($desktop) {
         margin: 0 2%;
@@ -273,11 +274,32 @@
     .post-picture,
     .post-recommendation {
         float: left;
+        height: inherit;
         width: 50%;
+    }
+
+    .post-picture {
+        border-radius: 15px 0 0 15px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .post-recommendation {
+        background-color: $dflt-gray;
     }
 
     .post-recommendation > div {
         padding: 0 1em;
+    }
+
+    .post-button {
+        background-color: $dflt-green;
+        border: 0;
+        border-radius: 0 0 15px 15px;
+        height: 35px;
+        position: relative;
+        top: -35px;
+        width: 100%;
     }
 }
 
