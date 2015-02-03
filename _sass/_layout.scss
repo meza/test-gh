@@ -151,9 +151,15 @@
 .post-content {
     // margin-bottom: $spacing-unit;
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+
+
     // margin: 0 2%;
 
     h2 {
@@ -239,21 +245,24 @@
 }
 
 
-.col-1 {
-    width: 100%;
-
-    @include media-query($on-laptop) {
-        margin: 0 2.5% 2em;
-        width: 45%;
-    }
-
-    @include media-query($desktop) {
-        margin: 0 1.25% 2em;
-        width: 22.5%;
-    }
+.col-1,
+.col-2 {
+    margin: 0 2% 2em;
 }
 
 .col-2 {
+    width: 100%;
+
+    @include media-query($on-laptop) {
+        width: 46%;
+    }
+
+    @include media-query($desktop) {
+        width: 21%;
+    }
+}
+
+.col-1 {
     width: 100%;
 
     .post-recommendation {
@@ -261,15 +270,12 @@
     }
 
     @include media-query($on-laptop) {
-        margin: 0 1.25% 2em;
-        width: 22.5%;
+        width: 21%;
     }
 
     @include media-query($desktop) {
-        margin: 0 0.75% 2em;
-        width: 11%;
+        width: 8.5%;
     }
-
 }
 
 .bottom-space {

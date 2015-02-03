@@ -11,12 +11,12 @@ layout: default
 	<article class="post-content">
 		{% for post in page.articles %}
 			{% if post.picture %}
-				<article class="post-box col-1">
+				<article class="post-box col-2">
 					<section class="post-picture">
 						<img src="{{ post.picture }}"/><br/>
 					</section>
 			{% else %}
-				<article class="post-box col-2">
+				<article class="post-box col-1">
 			{% endif %}
 					<!-- {% if post.picture %}
 						
