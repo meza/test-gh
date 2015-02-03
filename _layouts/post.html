@@ -18,9 +18,12 @@ layout: default
 				{% endif %}
 
 				<section class="post-recommendation">
-					<div class="post-header bottom-space">
+					<div class="post--header bottom-space">
 						<div class="title">{{ post.title }}</div>
 						<div class="author">{{ post.author }}</div>
+					</div>
+					<div class="post--category bottom-space">
+						<img src="/assets/science.png" height="14" width="15" />
 					</div>
 					<div class="post-summary">
 						{{ post.summary }}
@@ -33,10 +36,10 @@ layout: default
 					  article</a>
 				</footer> -->
 				<button class="post-button">
-				<span></span>
+					<span>read article</span>
 				</button>
 			</article>
 		{% endfor %}
 	</article>
-	
+
 </div>
