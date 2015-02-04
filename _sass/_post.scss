@@ -47,11 +47,19 @@
             font-weight: 600;
         }
     }
+
+    
+    .post-recommendation {
+        width: 50%;
+    }
     
     .post-picture,
     .post-recommendation {
         float: left;
         height: inherit;
+    }
+
+    .post-picture {
         width: 50%;
     }
 
@@ -144,7 +152,7 @@
 .col-2,
 .col-3 {
     margin: 0 2% 2em;
-    width: 100%
+    width: 100%;
 }
 
 .col-1 {
@@ -179,5 +187,11 @@
     @include media-query($desktop) {
         width: 46%;
     }    
+}
+
+.double-column {
+    .post-recommendation {
+        width: 100%;
+    }
 }
 

@@ -17,15 +17,23 @@ layout: default
 			the recommendation text would need -->
 
 			{% if post.picture %}
-				<article class="post-box col-2">
-					<section class="post-picture">
-						<img src="{{ post.picture }}"/><br/>
-					</section>
+				{% if recommendationSize < 2 %}
+					<article class="post-box col-2">
+				{% else %}
+					<article class="post-box col-3">
+				{% endif %}
+						<section class="post-picture">
+							<img src="{{ post.picture }}"/><br/>
+						</section>
 			{% else %}
-				<article class="post-box col-1">
+				{% if recommendationSize < 2 %}
+					<article class="post-box col-1">
+				{% else %}
+					<article class="post-box col-2 double-column">
+				{% endif %}
 			{% endif %}
-					<section class="post-recommendation">
 
+					<section class="post-recommendation">
 						<header class="post--header bottom-space">
 							<h1 class="title">{{ post.title }}</h1>
 						</header>
