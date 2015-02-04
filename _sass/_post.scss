@@ -141,7 +141,8 @@
 }
 
 .col-1,
-.col-2 {
+.col-2,
+.col-3 {
     margin: 0 2% 2em;
     width: 100%
 }
@@ -168,5 +169,15 @@
     @include media-query($desktop) {
         width: 21%;
     }
+}
+
+.col-3 {
+    @include media-query($on-laptop) {
+        width: 71%;
+    }
+
+    @include media-query($desktop) {
+        width: 46%;
+    }    
 }
 
