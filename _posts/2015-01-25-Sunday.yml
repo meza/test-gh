@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "25/01/2015 - Sunday"
+date:   2015-01-25 16:00:00
+categories: programming, frontend
+
+articles:
+  -
+    title: "Non-blocking web fonts using LocalStorage"
+    author: "meza"
+    summary: |
+      External Web Fonts are the new sexy thing, but they can be terrible to work
+      with if you're concerned by load time and user experience. We don't mind the
+      hard work, and this article summarizes the things I've seen during my time
+      at The Guardian... and some more!
+    categories:
+      - "programming"
+      - "frontend"
+    url: "http://crocodillon.com/blog/non-blocking-web-fonts-using-localstorage"
+    quote: To store a web font in LocalStorage we need to convert the font to a string using base64 encoding
+---
