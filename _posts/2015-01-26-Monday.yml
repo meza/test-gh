@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "26/01/2015 - Monday"
+date:   2015-01-26 16:00:00
+categories: programming, frontend, design
+
+articles:
+  -
+    title: "Git(Hub) Cheat Sheet"
+    author: "designhorf"
+    summary: |
+      I've been using git for a while now, but I know there's much more for me
+      to learn. I've found many useful commands on this page with some less
+      useful, but funny ones.
+    categories:
+      - "programming"
+      - "git"
+    url: "https://github.com/tiimgreen/github-cheat-sheet"
+    snippet: git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  -
+    title: "Getting Started With Style Guides"
+    author: "meza"
+    summary: |
+      Since we're about to start making our own style guide, it's worth looking
+      around what and how others are doing this sort of thing.
+    categories:
+      - "design"
+    url: http://marketblog.envato.com/trends/getting-started-style-guides/
+    quote: "Style guides are just one method of organizing design & brand concepts"
+
+---
