@@ -39,6 +39,11 @@ layout: default
 								<p>{{ post.quote }}</p>
 							</blockquote>
 						{% endif %}
+						{% if post.snippet %}
+							<code class="post--snippet">
+								<p>{{ post.snippet }}</p>
+							</code>
+						{% endif %}
 
 						<div class="post-summary">
 							<figure>
