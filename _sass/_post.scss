@@ -124,6 +124,9 @@
         width: 70px;
 
         img {
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
             margin: 0 auto;
         }
     }
