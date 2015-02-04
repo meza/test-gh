@@ -53,9 +53,11 @@ $desktop:		   1800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "placeholders",
         "colors",
         "base",
         "footer",
+        "post",
         "layout",
         "syntax-highlighting"
 ;

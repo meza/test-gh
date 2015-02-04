@@ -26,8 +26,15 @@ layout: default
 						</header>
 						
 						<div class="post--category bottom-space">
-							<img src="/assets/science.png" title="Category - Science" alt="science" height="14" width="15" />
+							<img src="/assets/science.png" title="Category - Science" alt="science" height="14px" width="15px">
 						</div>
+
+						{% if post.quote %}
+							<div class="post--quote">
+								{{ post.quote }}
+							</div>
+						{% endif %}
+						
 						<div class="post-summary">
 							{{ post.summary }}
 						</div>
