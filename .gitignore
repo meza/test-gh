@@ -142,9 +142,5 @@ local.properties
 .texlipse
 
 ### RPD
-node_modules
-app/components
-.tmp
-dist
-.bower-*
-nbproject
+_site
+.sass-cache
