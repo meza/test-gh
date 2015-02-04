@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "24/01/2015 - Saturday"
+date:   2015-01-24 16:00:00
+categories: education, future
+
+articles:
+  -
+    title: "Inodes - An Introduction"
+    author: "meza"
+    quote: |
+      You see, the directory is just a table that contains the filenames
+      in the directory, and the matching inode.
+    summary: |
+      We tend to take it for granted that a filesystem consists of directories,
+      however the truth is: it's not.
+      Since @designhorf has finally migrated to the unix world and @matta is
+      working with (kicking and breaking) linux computers, it's fair to say it's
+      wise to have a basic understanding of how it works.
+    categories:
+      - "computer"
+      - "OS"
+    url: "http://www.grymoire.com/Unix/Inodes.html"
+---
