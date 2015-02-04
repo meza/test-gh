@@ -38,6 +38,10 @@ layout: default
 						{% endif %}
 						
 						<div class="post-summary">
+							<figure>
+								<img src="{{ author.photo }}" height="40" width="40" />
+								<figcaption>{{ author.twitter }}</figcaption>
+							</figure>
 							{{ post.summary }}
 						</div>
 					</section>

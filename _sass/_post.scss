@@ -1,0 +1,169 @@
+/**
+ * Posts
+ */
+.post {
+    background-color: $dflt-gray;
+    border-radius: 17px;
+    padding: 35px;
+}
+
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.about-page,
+.post-content {
+    @extend %basic-text-styles;
+}
+
+.post-content {
+    @extend %flexbox;
+}
+
+.post-box {
+    border-radius: 15px;
+    box-sizing: border-box;
+    height: 420px;
+    margin: 0 0 2em;
+    overflow: hidden;
+
+    .post--header {
+        margin-top: 1.5em;
+        padding: 0 1.5em;
+        text-align: center;
+
+        h1 {
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+    }
+    
+    .post-picture,
+    .post-recommendation {
+        float: left;
+        height: inherit;
+        width: 50%;
+    }
+
+    .post-recommendation {
+        background-color: $white;
+
+        .post--category {
+            img {
+                display: table;
+                margin: 0 auto;
+            }
+        }
+
+        .post--quote {
+            font-size: 1.2em;
+            font-style: italic;
+            font-weight: 400;
+
+            p {
+                padding-left: 30px;
+            }
+
+            &:before {
+                content: '”';
+                font-size: 70px;
+                margin-left: -10px;
+                margin-top: -16px;
+                position: absolute;
+            }
+        }
+    }
+
+    .post-recommendation > div {
+        padding: 0 1em;
+    }
+
+    .post-button {
+        background-color: $dflt-green;
+        border: 0;
+        cursor: pointer;
+        float: left;
+        height: 35px;
+        padding: 0;
+        position: relative;
+        top: -35px;
+        width: 100%;
+
+        a {
+            color: $white;
+            display: block;
+            font-size: 1.1rem;
+            height: inherit;
+            padding-top: 6px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        &:hover {
+            background-color: darken($dflt-green, 10%);
+        }
+    }
+}
+
+.post-summary {
+    figure {
+        float: left;
+        margin-bottom: 0;
+        padding: 10px 0 0;
+        width: 70px;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    figcaption {
+        color: darken($dflt-green, 10%);
+        font-size: .6em;
+        font-style: italic;
+        padding-top: .3em;
+        text-align: center;
+    }
+}
+
+.col-1,
+.col-2 {
+    margin: 0 2% 2em;
+    width: 100%
+}
+
+.col-1 {
+    .post-recommendation {
+        width: 100%;
+    }
+
+    @include media-query($on-laptop) {
+        width: 21%;
+    }
+
+    @include media-query($desktop) {
+        width: 8.5%;
+    }
+}
+
+.col-2 {
+    @include media-query($on-laptop) {
+        width: 46%;
+    }
+
+    @include media-query($desktop) {
+        width: 21%;
+    }
+}
+
