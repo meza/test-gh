@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "23/01/2015 - Friday"
+date:   2015-01-28 15:41:20
+categories: education, future
+
+articles:
+  -
+    title: "Doomsday Clock"
+    author: "meza"
+    summary: |
+      There is a signaling system that tells us how close we are to a global nuclear or climate catastrophy.
+      Every year, scientists hold a meeting to re-evaluate the situation and adjust the device.
+      It was created by some members of the Manhattan project. The 'clock' is a metaphore: The closer the hour is to midnight, the closer we are to a technology induced disaster.
+      I wonder when will 'the rise of artificial intelligence' be a part of this system.
+    categories:
+      - "science"
+      - "future"
+    url: "http://en.wikipedia.org/wiki/Doomsday_Clock"
+    picture: "http://i.livescience.com/images/i/000/016/690/original/doomsday-clock-110516.jpg?1305581278"
+---
