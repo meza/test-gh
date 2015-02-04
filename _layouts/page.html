@@ -7,8 +7,12 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+					{% if page.categories == 'about' %}
+     		<article class="about-page">
+     {% else if %}
+  					<article class="post-content">
+ 				{% endif %}
+   				{{ content }}
+  			</article>
 
 </div>

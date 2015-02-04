@@ -147,21 +147,7 @@
     }
 }
 
-
-.post-content {
-    // margin-bottom: $spacing-unit;
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    justify-content: flex-start;
-    -webkit-justify-content: flex-start;
-
-
-    // margin: 0 2%;
-
+%basic-text-styles {
     h2 {
         font-size: 32px;
 
@@ -185,6 +171,22 @@
             font-size: 18px;
         }
     }
+}
+
+.about-page,
+.post-content {
+    @extend %basic-text-styles;
+}
+
+.post-content {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
 }
 
 .post-box {
