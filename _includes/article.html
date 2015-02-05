@@ -1,0 +1,56 @@
+{% assign author = site.data.writers[post.author] %}
+		<!--author.twitter  author.photo-->
+		{% assign recommendationSize = post.summary|size|divided_by:215 %}
+		<!-- The recommendationSize will have an integer to how many columns
+		the recommendation text would need -->
+
+{% if post.picture %}
+{% if recommendationSize < 2 %}
+	<article class="post-box col-2">
+{% else %}
+	<article class="post-box col-3">
+{% endif %}
+		<section class="post-picture">
+			<img src="{{ post.picture }}"/><br/>
+		</section>
+{% else %}
+{% if recommendationSize < 2 %}
+	<article class="post-box col-1">
+{% else %}
+	<article class="post-box col-2 double-column">
+{% endif %}
+{% endif %}
+
+	<section class="post-recommendation">
+		<header class="post--header bottom-space">
+			<h1 class="title">{{ post.title }}</h1>
+		</header>
+
+		<div class="post--category bottom-space">
+			<img src="/assets/science.png" title="Category - Science" alt="science" height="14px" width="15px">
+		</div>
+
+		{% if post.quote %}
+			<blockquote class="post--quote">
+				<p>{{ post.quote }}</p>
+			</blockquote>
+		{% endif %}
+		{% if post.snippet %}
+			<code class="post--snippet">
+				<p>{{ post.snippet }}</p>
+			</code>
+		{% endif %}
+
+		<div class="post-summary">
+			<figure>
+				<img src="{{ author.photo }}" height="40" width="40" />
+				<figcaption>{{ author.twitter }}</figcaption>
+			</figure>
+			{{ post.summary }}
+		</div>
+	</section>
+
+	<footer class="post-button">
+			<a href="{{ post.url }}" target="_blank">read article</a>
+	</footer>
+</article>
