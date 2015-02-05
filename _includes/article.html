@@ -10,8 +10,8 @@
 {% else %}
 	<article class="post-box col-3">
 {% endif %}
-		<section class="post-picture">
-			<img src="{{ article.picture }}"/><br/>
+		<section class="post-picture" style="background-image: url('{{ article.picture }}'); background-size: cover;">
+			<!-- <img src="{{ article.picture }}"/><br/> -->
 		</section>
 {% else %}
 {% if recommendationSize < 2 %}
