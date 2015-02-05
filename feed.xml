@@ -19,10 +19,12 @@ layout: null
             <author>{{ article.author }}</author>
             <description>
                 <![CDATA[
+                    <span rel="author">{{ article.author }}</span>
                     {% if article.picture %}
-                    <img src="{{article.picture}}"/></br>
+                    <img src="{{article.picture}}" width="800"/></br>
                     {% endif %}
                     {{ article.summary | xml_escape }}
+                    </br>
                     <a href="{{article.url}}" target="_blank">Read article</a>
                 ]]>
             </description>
