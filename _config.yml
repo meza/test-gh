@@ -14,3 +14,4 @@ baseurl: /test-gh
 # Build settings
 markdown: kramdown
 exclude: [vendor]
+paginate: 7
