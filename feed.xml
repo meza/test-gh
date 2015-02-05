@@ -19,7 +19,13 @@ layout: null
             <author>{{ article.author }}</author>
             <description>
                 <![CDATA[
-                    <span rel="author">{{ article.author }}</span>
+                    <span rel="author">
+                    {% if site.data.writers[article.author].twitter %}
+                        <a href="{{site.data.writers[article.author].twitter}}" target="_blank">{{ article.author }}</a>
+                    {% else %}
+                        {{ article.author }}
+                    {% endif %}
+                    </span></br>
                     {% if article.picture %}
                     <img src="{{article.picture}}" width="800"/></br>
                     {% endif %}
