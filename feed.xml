@@ -3,28 +3,49 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
-      <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
+    <channel>
+        <title>{{ site.title | xml_escape }}</title>
+        <description>{{ site.description | xml_escape }}</description>
+        <link>{{ site.url }}{{ site.baseurl }}/</link>
+        <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self"
+        type="application/rss+xml"/>
+        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+        <generator>Jekyll v{{ jekyll.version }}</generator>
+        {% for post in site.posts%}
+        {% for article in post.articles %}
+        <item>
+            <title>{{ article.title | xml_escape }}</title>
+            <author>{{ article.author }}</author>
+            <description>
+                <![CDATA[
+                    {% if article.picture %}
+                    <a href="{{article.url}}" target="_blank"><img src="{{article.picture}}" width="400"/></a></br>
+                    {% endif %}
+                    {% if article.quote %}
+                    <p><blockquote>{{ article.quote }}</blockquote></p>
+                    {% endif %}
+                    {% if article.snippet %}
+                    <p><code>{{ article.snippet }}</code></p>
+                    {% endif %}
+                    <p>{{ article.summary | xml_escape }}
+                    </br><span rel="author">By:
+                    {% if site.data.writers[article.author].twitter %}
+                    <a href="{{site.data.writers[article.author].twitter}}" target="_blank">{{ article.author }}</a>
+                    {% else %}
+                        {{ article.author }}
+                    {% endif %}
+                    </span> | <a href="{{article.url}}" target="_blank">Read article</a></p>
+                ]]>
+            </description>
+            <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+            <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+            <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+            {% for cat in article.categories %}
+            <category>{{ cat | xml_escape }}</category>
+            {% endfor %}
+        </item>
         {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
         {% endfor %}
-      </item>
-    {% endfor %}
-  </channel>
+    </channel>
 </rss>
