@@ -19,19 +19,23 @@ layout: null
             <author>{{ article.author }}</author>
             <description>
                 <![CDATA[
-                    <span rel="author">
+                    {% if article.picture %}
+                    <a href="{{article.url}}" target="_blank"><img src="{{article.picture}}" width="400"/></a></br>
+                    {% endif %}
+                    {% if article.quote %}
+                    <p><blockquote>{{ article.quote }}</blockquote></p>
+                    {% endif %}
+                    {% if article.snippet %}
+                    <p><code>{{ article.snippet }}</code></p>
+                    {% endif %}
+                    <p>{{ article.summary | xml_escape }}
+                    </br><span rel="author">By:
                     {% if site.data.writers[article.author].twitter %}
-                        <a href="{{site.data.writers[article.author].twitter}}" target="_blank">{{ article.author }}</a>
+                    <a href="{{site.data.writers[article.author].twitter}}" target="_blank">{{ article.author }}</a>
                     {% else %}
                         {{ article.author }}
                     {% endif %}
-                    </span></br>
-                    {% if article.picture %}
-                    <img src="{{article.picture}}" width="800"/></br>
-                    {% endif %}
-                    {{ article.summary | xml_escape }}
-                    </br>
-                    <a href="{{article.url}}" target="_blank">Read article</a>
+                    </span> | <a href="{{article.url}}" target="_blank">Read article</a></p>
                 ]]>
             </description>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
