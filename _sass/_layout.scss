@@ -41,7 +41,7 @@
         }
     }
 
-    @include media-query($on-palm) {
+    @include mq(0, $on-palm) {
         position: absolute;
         top: 9px;
         right: 30px;
