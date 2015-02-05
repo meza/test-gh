@@ -1,27 +1,33 @@
 {% assign author = site.data.writers[article.author] %}
+{% assign pictureSize = 0 %}
+{% assign snippetSize = 0 %}
+{% assign quoteSize = 0 %}
 		<!--author.twitter  author.photo-->
 		<!-- The recommendationSize will have an integer to how many columns
 		the recommendation text would need -->
-		{% assign recommendationSize = article.summary|size %}
-		{% assign snippetSize = (article.snippet|size)|times:1.2 %}
-		{% assign quoteSize = (article.quote|size)|times:1.2 %}
-		{% assign total = (snippetSize | plus:recommendationSize | plus:quoteSize )|divided_by:180 %}
+{% assign recommendationSize = article.summary|size|divided_by:180|plus:1 %}
+{% if article.picture %}
+	{% assign pictureSize = 1 %}
+{% endif %}
+{% if article.snippet %}
+	{% assign snippetSize = 1|plus:article.snippet|size)|divided_by:150|plus:1 %}
+{% endif %}
+{% if article.quote %}
+	{% assign quoteSize = 1|plus:article.quote|size|divided_by:168|plus:1 %}
+{% endif %}
+
+
+{% assign total = recommendationSize | plus:quoteSize | plus:snippetSize | plus:pictureSize %}
 
 {% if article.picture %}
-	{% if total < 1.1 %}
-		<article class="post-box col-2">
-	{% else %}
-		<article class="post-box col-3">
-	{% endif %}
+		<article class="post-box col-{{ total }}">
 		<section class="post-picture" style="background-image: url('{{ article.picture }}'); background-size: cover;">
 			<!-- <img src="{{ article.picture }}"/><br/> -->
 		</section>
 {% else %}
-
-	{% if total < 1.1 %}
-		<article class="post-box col-1">
-	{% else %}
-		<article class="post-box col-2 double-column">
+		<article class="post-box col-{{ total }}">
+	{% if total == 2 %}
+		<article class="post-box col-{{ total }} double-column">
 	{% endif %}
 {% endif %}
 
