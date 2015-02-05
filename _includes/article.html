@@ -1,24 +1,28 @@
 {% assign author = site.data.writers[article.author] %}
 		<!--author.twitter  author.photo-->
-		{% assign recommendationSize = article.summary|size|divided_by:215 %}
 		<!-- The recommendationSize will have an integer to how many columns
 		the recommendation text would need -->
+		{% assign recommendationSize = article.summary|size %}
+		{% assign snippetSize = (article.snippet|size)|times:1.2 %}
+		{% assign quoteSize = (article.quote|size)|times:1.2 %}
+		{% assign total = (snippetSize | plus:recommendationSize | plus:quoteSize )|divided_by:180 %}
 
 {% if article.picture %}
-{% if recommendationSize < 2 %}
-	<article class="post-box col-2">
-{% else %}
-	<article class="post-box col-3">
-{% endif %}
+	{% if total < 1.1 %}
+		<article class="post-box col-2">
+	{% else %}
+		<article class="post-box col-3">
+	{% endif %}
 		<section class="post-picture" style="background-image: url('{{ article.picture }}'); background-size: cover;">
 			<!-- <img src="{{ article.picture }}"/><br/> -->
 		</section>
 {% else %}
-{% if recommendationSize < 2 %}
-	<article class="post-box col-1">
-{% else %}
-	<article class="post-box col-2 double-column">
-{% endif %}
+
+	{% if total < 1.1 %}
+		<article class="post-box col-1">
+	{% else %}
+		<article class="post-box col-2 double-column">
+	{% endif %}
 {% endif %}
 
 	<section class="post-recommendation">
