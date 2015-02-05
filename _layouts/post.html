@@ -9,12 +9,10 @@ layout: default
 	</header>
 
 	<article class="post-content">
-		{% for post in page.articles %}
+		{% for article in page.articles %}
 			{% include article.html %}
 		{% endfor %}
 	</article>
-
-
 
  	{% include comments.html %}
 
