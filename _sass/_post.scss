@@ -33,7 +33,8 @@
 .post-box {
     border-radius: $base-border-radius;
     box-sizing: border-box;
-    margin: 0 0 2em;
+    display: inline-flex;
+    margin: 0 2% 2em;
     overflow: hidden;
 
     @include min-media($on-laptop) {
@@ -59,9 +60,9 @@
         width: 100%;
     }
 
-    .post-picture {
-        width: 50%;
-    }
+    // .post-picture {
+    //     width: 50%;
+    // }
 
     .post-picture,
     .post-recommendation {
@@ -163,7 +164,7 @@
 .col-1,
 .col-2,
 .col-3 {
-    margin: 0 2% 2em;
+    // margin: 0 2% 2em;
     width: 100%;
 
     @include max-media($on-laptop) {
@@ -235,6 +236,7 @@
 
 .post-recommendation {
     @extend %flexbox;
+    align-content: flex-start;
     height: inherit;
 
     .post--category,
