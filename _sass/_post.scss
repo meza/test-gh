@@ -48,8 +48,15 @@
         }
     }
 
-    
-    .post-recommendation {
+    .halfSize {
+        width: 50%;
+    }
+
+    .fullSize {
+        width: 100%;
+    }
+
+    .post-picture {
         width: 50%;
     }
     
@@ -59,9 +66,6 @@
         height: inherit;
     }
 
-    .post-picture {
-        width: 50%;
-    }
 
     .post-recommendation {
         background-color: $white;

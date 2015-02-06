@@ -13,6 +13,7 @@ articles:
       - "education"
     url: "http://www.iheartintelligence.com/2014/01/18/beat-the-system-40-free-educational-websites/"
     picture: "http://www.iheartintelligence.com/wp-content/uploads/2014/01/erbooks-1024x600.jpg"
+    size: "2"
   -
     title: "Walk up and use anything"
     author: "meza"
@@ -21,4 +22,5 @@ articles:
       - "future"
       - "internet of things"
     url: "http://google.github.io/physical-web/"
+    size: "2"
 ---

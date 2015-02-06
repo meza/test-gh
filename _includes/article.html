@@ -1,106 +1,47 @@
 {% assign author = site.data.writers[article.author] %}
+{% assign totalSize = article.size %}
 
-{% assign pictureSize = 0 %}
-{% assign snippetSize = 0 %}
-{% assign quoteSize = 0 %}
-		<!--author.twitter  author.photo-->
-		<!-- The recommendationSize will have an integer to how many columns
-		the recommendation text would need -->
-{% assign recommendationSize = article.summary|size|divided_by:180|plus:1 %}
-{% assign recommendationHalfSize = article.summary|size|divided_by:90|plus:1 %}
+
+<article class="post-box col-{{ totalSize }}">
 {% if article.picture %}
-	{% assign pictureSize = 1 %}
-{% endif %}
-{% if article.snippet %}
-	{% assign snippetSize = article.snippet|size)|divided_by:150|plus:1 %}
-	{% assign snippetHalfSize = article.snippet|size|divided_by:75|plus:1 %}
-	{% assign snippetAndRecommendationFitInOne = true %}
-	{% if snippetHalfSize > 1 || recommendationHalfSize > 1 %}
-		{% assign snippetAndRecommendationFitInOne = false %}
-	{% endif %}
-{% endif %}
-
-{% if article.quote %}
-	{% assign quoteSize = article.quote|size|divided_by:168|plus:1 %}
-	{% assign quoteHalfSize = article.quote|size|divided_by:84|plus:1 %}
-	{% assign quoteAndRecommendationFitInOne = true %}
-	{% if quoteHalfSize > 1 || recommendationHalfSize > 1 %}
-		{% assign quoteAndRecommendationFitInOne = false %}
-	{% endif %}
-{% endif %}
-
-
-
-{% assign total = 1 %}
-{% if article.picture %}
-	{% assign total = total|plus:pictureSize %}
-{% endif %}
-{% if article.quote %}
-	{% if quoteAndRecommendationFitInOne == false %}
-		{% if quoteHalfSize > 1 && recommendationHalfSize < 1 %}
-			{% assign total = total|plus:quoteSize %}
-		{% elsif quoteHalfSize < 1 && recommendationHalfSize > 1 %}
-			{% assign total = total|plus:recommendationSize %}
-		{% else %}
-			{% assign total = total|plus:recommendationSize|plus:quoteSize %}
-		{% endif %}
-	{% endif %}
-{% endif %}
-{% if article.snippet %}
-	{% if snippetAndRecommendationFitInOne == false %}
-		{% if snippetHalfSize > 1 && recommendationHalfSize < 1 %}
-			{% assign total = total|plus:snippetSize %}
-		{% elsif snippetHalfSize < 1 && recommendationHalfSize > 1 %}
-			{% assign total = total|plus:recommendationSize %}
-		{% else %}
-			{% assign total = total|plus:recommendationSize|plus:snippetSize %}
-		{% endif %}
-	{% endif %}
-{% endif %}
-
-{% if article.picture %}
-		<article class="post-box col-{{ total }}">
-		<section class="post-picture" style="background-image: url('{{ article.picture }}'); background-size: cover;">
-			<!-- <img src="{{ article.picture }}"/><br/> -->
-		</section>
+			<section class="post-picture" style="background-image: url('{{ article.picture }}'); background-size: cover;">
+			</section>
+			<section class="post-recommendation halfSize">
 {% else %}
-	{% if total < 2 %}
-		<article class="post-box col-{{ total }}">
-	{% else %}
-		<article class="post-box col-{{ total }} double-column">
-	{% endif %}
+			<section class="post-recommendation fullSize">
 {% endif %}
 
-	<section class="post-recommendation">
-		<header class="post--header bottom-space">
-			<h1 class="title">{{ article.title }}</h1>
-		</header>
+	
+				<header class="post--header bottom-space">
+					<h1 class="title">{{ article.title }}</h1>
+				</header>
 
-		<div class="post--category bottom-space">
-				<p>{{ article.categories[0] }}</p>
-		</div>
+				<div class="post--category bottom-space">
+						<p>{{ article.categories[0] }}</p>
+				</div>
 
-		{% if article.quote %}
-			<blockquote class="post--quote">
-				<p>{{ article.quote }}</p>
-			</blockquote>
-		{% endif %}
-		{% if article.snippet %}
-			<code class="post--snippet">
-				<p>{{ article.snippet }}</p>
-			</code>
-		{% endif %}
+				{% if article.quote %}
+					<blockquote class="post--quote">
+						<p>{{ article.quote }}</p>
+					</blockquote>
+				{% endif %}
+				{% if article.snippet %}
+					<code class="post--snippet">
+						<p>{{ article.snippet }}</p>
+					</code>
+				{% endif %}
 
-		<div class="post-summary">
-			<figure>
-				<img src="{{ author.photo }}" height="40" width="40" />
-				<figcaption>{{ author.twitter }}</figcaption>
-			</figure>
-			{{ article.summary }}
-		</div>
-	</section>
+				<div class="post-summary">
+					<figure>
+						<img src="{{ author.photo }}" height="40" width="40" />
+						<figcaption>{{ author.twitter }}</figcaption>
+					</figure>
+					{{ article.summary }}
+				</div>
+			</section>
 
-	<footer class="post-button">
-			<a href="{{ article.url }}" target="_blank">read article</a>
-	</footer>
-</article>
+			<footer class="post-button">
+					<a href="{{ article.url }}" target="_blank">read article</a>
+			</footer>
+		</article>
+	

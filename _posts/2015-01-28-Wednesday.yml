@@ -14,6 +14,7 @@ articles:
       - "education"
     url: "http://www.iheartintelligence.com/2014/01/18/beat-the-system-40-free-educational-websites/"
     picture: "http://alistapart.com/d/_made/d/ALA_412_vision-for-sass_960_403_81.jpg"
+    size: "2"
   -
     title: "Walk up and use anything"
     author: "meza"
@@ -23,6 +24,7 @@ articles:
       - "internet of things"
     picture: "http://bit.ly/18IovKR"
     url: "http://google.github.io/physical-web/"
+    size: "2"
   -
     title: "Blaaaaaaa"
     author: "meza"
@@ -31,6 +33,7 @@ articles:
       - "education"
     url: "http://www.iheartintelligence.com/2014/01/18/beat-the-system-40-free-educational-websites/"
     picture: "http://fc06.deviantart.net/fs71/f/2012/143/4/1/the_luminous_landscape_pt_9__by_realitydream-d50t851.jpg"
+    size: "2"
   -
     title: "Blaaaaaaa"
     author: "meza"
@@ -38,4 +41,5 @@ articles:
     categories:
       - "education"
     url: "http://www.iheartintelligence.com/2014/01/18/beat-the-system-40-free-educational-websites/"
+    size: "2"
 ---
