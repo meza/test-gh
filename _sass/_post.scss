@@ -59,15 +59,18 @@
         height: 420px;
     }
 
-    .post--button,
+    // .post--button,
+    .code,
     .post--header,
     .post--quote,
-    .post--snippet,
     .post--summary {
+        left: -50%;
+        position: relative;
         width: 50%;
     }
 
     .pictureWindow {
+        background-color: lightgray;
         order: 0;
     }
 
@@ -77,7 +80,6 @@
 
     .post--header {
         background-color: #fff;
-        margin-top: -37px;
         order: 1;
         text-align: center;
 
@@ -94,7 +96,6 @@
         font-style: italic;
         font-weight: 400;
         order: 2;
-        padding: 0 .8em;
 
         p {
             padding-left: 40px;
@@ -117,7 +118,8 @@
         // order: 5;
         padding: 0;
         position: relative;
-        top: 385px;
+        // top: 385px;
+        width: 100%;
         z-index: 9999;
 
         a {
