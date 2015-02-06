@@ -126,13 +126,14 @@
         order: 2;
 
         p {
-            padding-left: 40px;
+            padding: 0 1em 0 3em;
         }
 
         &:before {
             content: '“';
             font-family: Helvetica, Arial, sans-serif;
             font-size: 70px;
+            margin-left: 15px;
             margin-top: -16px;
             position: absolute;
         }
@@ -229,32 +230,3 @@
     }
 }
 
-// .no-pic {
-//     @include mq($on-laptop, $desktop) {
-//         width: 71%;
-//     }
-
-//     @include mq($desktop, $mDesktop) {
-//         width: 46%;
-//     }
-
-//     @include min-media($mDesktop) {
-//         .post--quote {
-//             margin: 1.5em auto 1em;
-//             width: 65%;
-//         }
-//     }
-// }
-
-// .post-recommendation {
-//     @extend %flexbox;
-//     align-content: flex-start;
-
-//     .post--category,
-//     .post--header {
-//         width: 100%;
-//     }
-
-//     .post--text {
-//     }
-// }
