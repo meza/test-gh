@@ -21,6 +21,20 @@
     }
 }
 
+.post--category {
+    p {
+        font-size: .75em;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    img {
+        display: table;
+        margin: 0 auto;
+    }
+}
+
 .about-page,
 .post-content {
     @extend %basic-text-styles;
@@ -31,9 +45,10 @@
 }
 
 .post-box {
+    background-color: #fff;
     border-radius: $base-border-radius;
     box-sizing: border-box;
-    display: inline-flex;
+    flex-direction: column;
     margin: 0 2% 2em;
     overflow: hidden;
 
@@ -42,22 +57,15 @@
     }
 
     .post--header {
-        margin-top: 1.5em;
+        background-color: #fff;
         padding: 0 1.5em;
         text-align: center;
 
         h1 {
             font-size: 1.4em;
             font-weight: 600;
+            padding-top: 15px;
         }
-    }
-
-    .halfSize {
-        width: 50%;
-    }
-
-    .fullSize {
-        width: 100%;
     }
 
     // .post-picture {
@@ -66,25 +74,12 @@
 
     .post-picture,
     .post-recommendation {
-        float: left;
-        height: inherit;
+        // float: left;
     }
 
 
     .post-recommendation {
         background-color: $white;
-
-        .post--category {
-            p {
-                font-size: .75em;
-                text-align: center;
-            }
-
-            img {
-                display: table;
-                margin: 0 auto;
-            }
-        }
 
         .post--quote {
             font-size: 1.2em;
@@ -105,7 +100,7 @@
         }
     }
 
-    .post-recommendation > div {
+    .post-recommendation > section:not(.code) {
         padding: 0 1em;
     }
 
@@ -237,7 +232,6 @@
 .post-recommendation {
     @extend %flexbox;
     align-content: flex-start;
-    height: inherit;
 
     .post--category,
     .post--header {
