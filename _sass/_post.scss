@@ -228,9 +228,20 @@
     }
 }
 
-.double-column {
-    .post-recommendation {
-        width: 100%;
-    }
+.blaaa {
+    background-color: $dflt-green;
+    height: 30px;
 }
 
+.post-recommendation {
+    @extend %flexbox;
+    height: inherit;
+
+    .post--category,
+    .post--header {
+        width: 100%;
+    }
+
+    .post--text {
+    }
+}
