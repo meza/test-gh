@@ -16,7 +16,7 @@
     letter-spacing: -1px;
     line-height: 1;
 
-    @include media-query($on-laptop) {
+    @include min-media($on-laptop) {
         font-size: 36px;
     }
 }
@@ -33,9 +33,12 @@
 .post-box {
     border-radius: $base-border-radius;
     box-sizing: border-box;
-    height: 420px;
     margin: 0 0 2em;
     overflow: hidden;
+
+    @include min-media($on-laptop) {
+        height: 420px;
+    }
 
     .post--header {
         margin-top: 1.5em;
@@ -88,13 +91,13 @@
             font-weight: 400;
 
             p {
-                padding-left: 30px;
+                padding-left: 40px;
             }
 
             &:before {
                 content: '“';
+                font-family: Helvetica, Arial, sans-serif;
                 font-size: 70px;
-                margin-left: -10px;
                 margin-top: -16px;
                 position: absolute;
             }
@@ -162,6 +165,28 @@
 .col-3 {
     margin: 0 2% 2em;
     width: 100%;
+
+    @include max-media($on-laptop) {
+        height: initial;
+
+        .post-picture {
+            height: 300px;
+        }
+
+        .post-picture,
+        .post-recommendation {
+            display: block;
+            width: 100%;
+        }
+
+        .post-recommendation {
+            padding-bottom: 1.5em;
+        }
+
+        .post-button {
+            position: initial;
+        }
+    }
 }
 
 .col-1 {
@@ -169,19 +194,19 @@
         width: 100%;
     }
 
-    @include media-query($mDesktop) {
+    @include min-media($mDesktop) {
         width: 21%;
     }
 }
 
 .col-2 {
-    @include media-query($mDesktop) {
+    @include min-media($mDesktop) {
         width: 46%;
     }
 }
 
 .col-3 {
-    @include media-query($mDesktop) {
+    @include min-media($mDesktop) {
         width: 71%;
     }
 }
@@ -195,7 +220,7 @@
         width: 46%;
     }
 
-    @include media-query($mDesktop) {
+    @include min-media($mDesktop) {
         .post--quote {
             margin: 1.5em auto 1em;
             width: 65%;

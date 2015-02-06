@@ -41,8 +41,15 @@ $wDesktop:		   1800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
-@mixin media-query($device) {
+
+@mixin min-media($device) {
     @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
+@mixin max-media($device) {
+    @media screen and (max-width: $device) {
         @content;
     }
 }
