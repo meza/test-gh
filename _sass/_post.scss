@@ -4,12 +4,7 @@
 .post {
     background-color: $dflt-gray;
     border-radius: $base-border-radius;
-    // padding: 35px;
 }
-
-// .post-header {
-//     margin-bottom: $spacing-unit;
-// }
 
 .post-title {
     font-size: 42px;
@@ -44,6 +39,49 @@
     @extend %flexbox;
 }
 
+.post-box:not(.nopic) {
+
+    .code,
+    .post--header,
+    .post--quote,
+    .post--summary {
+        left: -50%;
+        position: relative;
+        width: 50%;
+    }
+
+    .post--button {
+        background-color: $dflt-green;
+        border: 0;
+        cursor: pointer;
+        height: 37px;
+        order: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        z-index: 9999;
+    }
+}
+
+.nopic {
+    .post--button {
+        order: 0;
+        position: relative;
+        top: 383px;
+    }
+
+    .code,
+    .post--header,
+    .post--quote,
+    .post--summary {
+        width: 100%;
+    }
+
+    .post--header {
+        margin-top: -37px;
+    }
+}
+
 .post-box {
     background-color: #fff;
     border-radius: $base-border-radius;
@@ -57,16 +95,6 @@
 
     @include min-media($on-laptop) {
         height: 420px;
-    }
-
-    // .post--button,
-    .code,
-    .post--header,
-    .post--quote,
-    .post--summary {
-        left: -50%;
-        position: relative;
-        width: 50%;
     }
 
     .pictureWindow {
@@ -115,12 +143,8 @@
         border: 0;
         cursor: pointer;
         height: 37px;
-        // order: 5;
         padding: 0;
-        position: relative;
-        // top: 385px;
         width: 100%;
-        z-index: 9999;
 
         a {
             color: $white;
@@ -175,15 +199,15 @@
 .col-2,
 .col-3 {
     // margin: 0 2% 2em;
-    width: 100%;
+    // width: 100%;
 
-    @include max-media($on-laptop) {
-        height: initial;
+    // @include max-media($on-laptop) {
+    //     height: initial;
 
-        .post--button {
-            position: initial;
-        }
-    }
+    //     .post--button {
+    //         position: initial;
+    //     }
+    // }
 }
 
 .col-1 {
@@ -205,22 +229,22 @@
     }
 }
 
-.no-pic {
-    @include mq($on-laptop, $desktop) {
-        width: 71%;
-    }
+// .no-pic {
+//     @include mq($on-laptop, $desktop) {
+//         width: 71%;
+//     }
 
-    @include mq($desktop, $mDesktop) {
-        width: 46%;
-    }
+//     @include mq($desktop, $mDesktop) {
+//         width: 46%;
+//     }
 
-    @include min-media($mDesktop) {
-        .post--quote {
-            margin: 1.5em auto 1em;
-            width: 65%;
-        }
-    }
-}
+//     @include min-media($mDesktop) {
+//         .post--quote {
+//             margin: 1.5em auto 1em;
+//             width: 65%;
+//         }
+//     }
+// }
 
 // .post-recommendation {
 //     @extend %flexbox;
