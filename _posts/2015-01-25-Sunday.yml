@@ -18,5 +18,5 @@ articles:
       - "frontend"
     url: "http://crocodillon.com/blog/non-blocking-web-fonts-using-localstorage"
     quote: To store a web font in LocalStorage we need to convert the font to a string using base64 encoding
-    size: "2"
+    size: 2
 ---
