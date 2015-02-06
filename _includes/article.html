@@ -1,46 +1,53 @@
 {% assign author = site.data.writers[article.author] %}
 {% assign totalSize = article.size %}
 
-
-		<article class="post-box col-{{ totalSize }}">
-
+{% if article.picture %}
+	<article class="post-box col-{{ totalSize }}">
 			<header class="post--header">
 				<h1 class="title">{{ article.title }}</h1>
 				<div class="post--category">
 					<p>{{ article.categories[0] }}</p>
 				</div>
 			</header>
+{% else %}
+	<article class="post-box col-{{ totalSize }}">
+			<header class="post--header">
+				<h1 class="title">{{ article.title }}</h1>
+				<div class="post--category">
+					<p>{{ article.categories[0] }}</p>
+				</div>
+			</header>
+{% endif %}
 
-			<section class="post-recommendation">
+	<!--section class="post-recommendation"-->
+	{% if article.picture %}
+		<section class="pictureWindow">
+		</section>
+	{% endif %}
 
-
-						{% if article.quote %}
-							<section>
-								<blockquote class="post--quote">
-									<p>{{ article.quote }}</p>
-								</blockquote>
-							</section>
-						{% endif %}
-						{% if article.snippet %}
-							<section class="code">
-								<code class="post--snippet">
-									<p>{{ article.snippet }}</p>
-								</code>
-							</section>
-						{% endif %}
-
-						<section class="post-summary">
-							<figure>
-								<img src="{{ author.photo }}" height="40" width="40" />
-								<figcaption>{{ author.twitter }}</figcaption>
-							</figure>
-							{{ article.summary }}
-						</section>
+	{% if article.quote %}
+			<section class="post--quote">
+				<p>{{ article.quote }}</p>
 			</section>
+	{% endif %}
+	{% if article.snippet %}
+		<section class="code">
+			<code class="post--snippet">
+				<p>{{ article.snippet }}</p>
+			</code>
+		</section>
+	{% endif %}
 
-			<!--footer class="post-button">
-					<a href="{{ article.url }}" target="_blank">read article</a>
-			</footer-->
-			
-		</article>
+	<section class="post-summary">
+		<figure>
+			<img src="{{ author.photo }}" height="40" width="40" />
+			<figcaption>{{ author.twitter }}</figcaption>
+		</figure>
+		{{ article.summary }}
+	</section>
+
+	<footer class="post-button">
+			<a href="{{ article.url }}" target="_blank">read article</a>
+	</footer>
 	
+</article>

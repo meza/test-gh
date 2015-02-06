@@ -7,9 +7,9 @@
     // padding: 35px;
 }
 
-.post-header {
-    margin-bottom: $spacing-unit;
-}
+// .post-header {
+//     margin-bottom: $spacing-unit;
+// }
 
 .post-title {
     font-size: 42px;
@@ -48,7 +48,11 @@
     background-color: #fff;
     border-radius: $base-border-radius;
     box-sizing: border-box;
-    flex-direction: column;
+    // flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
     margin: 0 2% 2em;
     overflow: hidden;
 
@@ -60,59 +64,41 @@
         background-color: #fff;
         padding: 0 1.5em;
         text-align: center;
+        width: 100%;
 
         h1 {
             font-size: 1.4em;
             font-weight: 600;
-            padding-top: 15px;
+            padding-top: 1em;
         }
     }
 
-    // .post-picture {
-    //     width: 50%;
-    // }
+    .post--quote {
+        color: $grey-color;
+        font-size: 1.15em;
+        font-style: italic;
+        font-weight: 400;
+        padding: 0 .8em;
 
-    .post-picture,
-    .post-recommendation {
-        // float: left;
-    }
-
-
-    .post-recommendation {
-        background-color: $white;
-
-        .post--quote {
-            font-size: 1.2em;
-            font-style: italic;
-            font-weight: 400;
-
-            p {
-                padding-left: 40px;
-            }
-
-            &:before {
-                content: '“';
-                font-family: Helvetica, Arial, sans-serif;
-                font-size: 70px;
-                margin-top: -16px;
-                position: absolute;
-            }
+        p {
+            padding-left: 40px;
         }
-    }
 
-    .post-recommendation > section:not(.code) {
-        padding: 0 1em;
+        &:before {
+            content: '“';
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 70px;
+            margin-top: -16px;
+            position: absolute;
+        }
     }
 
     .post-button {
         background-color: $dflt-green;
         border: 0;
         cursor: pointer;
-        float: left;
-        height: 35px;
+        height: 37px;
         padding: 0;
-        position: relative;
-        top: -35px;
         width: 100%;
 
         a {
@@ -133,6 +119,9 @@
 }
 
 .post-summary {
+    line-height: 1.6em;
+    padding: 0 1em;
+
     figure {
         float: left;
         margin-bottom: 0;
@@ -151,7 +140,7 @@
         color: darken($dflt-green, 10%);
         font-size: .6em;
         font-style: italic;
-        padding-top: .3em;
+        // padding-top: .3em;
         text-align: center;
     }
 }
@@ -169,14 +158,9 @@
             height: 300px;
         }
 
-        .post-picture,
-        .post-recommendation {
+        .post-picture {
             display: block;
             width: 100%;
-        }
-
-        .post-recommendation {
-            padding-bottom: 1.5em;
         }
 
         .post-button {
@@ -186,9 +170,6 @@
 }
 
 .col-1 {
-    .post-recommendation {
-        width: 100%;
-    }
 
     @include min-media($mDesktop) {
         width: 21%;
@@ -224,20 +205,15 @@
     }
 }
 
-.blaaa {
-    background-color: $dflt-green;
-    height: 30px;
-}
+// .post-recommendation {
+//     @extend %flexbox;
+//     align-content: flex-start;
 
-.post-recommendation {
-    @extend %flexbox;
-    align-content: flex-start;
+//     .post--category,
+//     .post--header {
+//         width: 100%;
+//     }
 
-    .post--category,
-    .post--header {
-        width: 100%;
-    }
-
-    .post--text {
-    }
-}
+//     .post--text {
+//     }
+// }
