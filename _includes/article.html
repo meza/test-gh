@@ -2,26 +2,20 @@
 {% assign totalSize = article.size %}
 
 {% if article.picture %}
-	<article class="post-box col-{{ totalSize }}">
-			<header class="post--header">
-				<h1 class="title">{{ article.title }}</h1>
-				<div class="post--category">
-					<p>{{ article.categories[0] }}</p>
-				</div>
-			</header>
+	<article class="post-box col-{{ totalSize|plus:1 }}">
 {% else %}
 	<article class="post-box col-{{ totalSize }}">
-			<header class="post--header">
-				<h1 class="title">{{ article.title }}</h1>
-				<div class="post--category">
-					<p>{{ article.categories[0] }}</p>
-				</div>
-			</header>
 {% endif %}
 
-	<!--section class="post-recommendation"-->
+	<header class="post--header">
+		<h1 class="title">{{ article.title }}</h1>
+		<div class="post--category">
+			<p>{{ article.categories[0] }}</p>
+		</div>
+	</header>
+
 	{% if article.picture %}
-		<section class="pictureWindow">
+		<section class="pictureWindow" style="background-image:url({{ article.picture }}); background-size: cover; background-position: center; height:420px; width:50%;">
 		</section>
 	{% endif %}
 
@@ -38,15 +32,15 @@
 		</section>
 	{% endif %}
 
-	<section class="post-summary">
+	<section class="post--summary">
 		<figure>
 			<img src="{{ author.photo }}" height="40" width="40" />
 			<figcaption>{{ author.twitter }}</figcaption>
 		</figure>
-		{{ article.summary }}
+		<p>{{ article.summary }}</p>
 	</section>
 
-	<footer class="post-button">
+	<footer class="post--button">
 			<a href="{{ article.url }}" target="_blank">read article</a>
 	</footer>
 	

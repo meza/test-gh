@@ -48,11 +48,10 @@
     background-color: #fff;
     border-radius: $base-border-radius;
     box-sizing: border-box;
-    // flex-direction: column;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
     margin: 0 2% 2em;
     overflow: hidden;
 
@@ -60,16 +59,32 @@
         height: 420px;
     }
 
+    .post--button,
+    .post--header,
+    .post--quote,
+    .post--snippet,
+    .post--summary {
+        width: 50%;
+    }
+
+    .pictureWindow {
+        order: 0;
+    }
+
+    .code {
+        order: 3;
+    }
+
     .post--header {
         background-color: #fff;
-        padding: 0 1.5em;
+        margin-top: -37px;
+        order: 1;
         text-align: center;
-        width: 100%;
 
         h1 {
             font-size: 1.4em;
             font-weight: 600;
-            padding-top: 1em;
+            padding: 1em 1em 0 1em;
         }
     }
 
@@ -78,6 +93,7 @@
         font-size: 1.15em;
         font-style: italic;
         font-weight: 400;
+        order: 2;
         padding: 0 .8em;
 
         p {
@@ -93,13 +109,16 @@
         }
     }
 
-    .post-button {
+    .post--button {
         background-color: $dflt-green;
         border: 0;
         cursor: pointer;
         height: 37px;
+        // order: 5;
         padding: 0;
-        width: 100%;
+        position: relative;
+        top: 385px;
+        z-index: 9999;
 
         a {
             color: $white;
@@ -118,14 +137,19 @@
     }
 }
 
-.post-summary {
+.post--summary {
     line-height: 1.6em;
-    padding: 0 1em;
+    order: 4;
+
+    p {
+        padding: 0 1em;
+    }
 
     figure {
         float: left;
         margin-bottom: 0;
-        padding: 10px 0 0;
+        // padding: 10px 0 0;
+        padding: 0 1em;
         width: 70px;
 
         img {
@@ -154,16 +178,7 @@
     @include max-media($on-laptop) {
         height: initial;
 
-        .post-picture {
-            height: 300px;
-        }
-
-        .post-picture {
-            display: block;
-            width: 100%;
-        }
-
-        .post-button {
+        .post--button {
             position: initial;
         }
     }
