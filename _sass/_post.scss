@@ -169,33 +169,38 @@
         width: 100%;
     }
 
-    @include media-query($on-laptop) {
+    @include media-query($mDesktop) {
         width: 21%;
-    }
-
-    @include media-query($wDesktop) {
-        width: 8.5%;
     }
 }
 
 .col-2 {
-    @include media-query($on-laptop) {
+    @include media-query($mDesktop) {
         width: 46%;
-    }
-
-    @include media-query($wDesktop) {
-        width: 21%;
     }
 }
 
 .col-3 {
-    @include media-query($on-laptop) {
+    @include media-query($mDesktop) {
+        width: 71%;
+    }
+}
+
+.no-pic {
+    @include mq($on-laptop, $desktop) {
         width: 71%;
     }
 
-    @include media-query($wDesktop) {
+    @include mq($desktop, $mDesktop) {
         width: 46%;
-    }    
+    }
+
+    @include media-query($mDesktop) {
+        .post--quote {
+            margin: 1.5em auto 1em;
+            width: 65%;
+        }
+    }
 }
 
 .double-column {

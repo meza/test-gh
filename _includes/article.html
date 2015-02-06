@@ -2,12 +2,13 @@
 {% assign totalSize = article.size %}
 
 
-<article class="post-box col-{{ totalSize }}">
 {% if article.picture %}
+	<article class="post-box col-{{ totalSize }}">
 			<section class="post-picture" style="background-image: url('{{ article.picture }}'); background-size: cover; background-color: #CFCACA; background-position: center;">
 			</section>
 			<section class="post-recommendation halfSize">
 {% else %}
+	<article class="post-box col-{{ totalSize }} no-pic">
 			<section class="post-recommendation fullSize">
 {% endif %}
 
