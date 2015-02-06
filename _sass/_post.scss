@@ -59,7 +59,7 @@
     .post-picture {
         width: 50%;
     }
-    
+
     .post-picture,
     .post-recommendation {
         float: left;
@@ -173,7 +173,7 @@
         width: 21%;
     }
 
-    @include media-query($desktop) {
+    @include media-query($wDesktop) {
         width: 8.5%;
     }
 }
@@ -183,7 +183,7 @@
         width: 46%;
     }
 
-    @include media-query($desktop) {
+    @include media-query($wDesktop) {
         width: 21%;
     }
 }
@@ -193,7 +193,7 @@
         width: 71%;
     }
 
-    @include media-query($desktop) {
+    @include media-query($wDesktop) {
         width: 46%;
     }    
 }

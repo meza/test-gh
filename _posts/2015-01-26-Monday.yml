@@ -17,7 +17,8 @@ articles:
       - "git"
     url: "https://github.com/tiimgreen/github-cheat-sheet"
     snippet: git log --all --graph --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    size: "2"
+    picture: "https://octodex.github.com/images/murakamicat.png"
+    size: "3"
   -
     title: "Getting Started With Style Guides"
     author: "meza"
@@ -28,6 +29,7 @@ articles:
       - "design"
     url: http://marketblog.envato.com/trends/getting-started-style-guides/
     quote: "Style guides are just one method of organizing design & brand concepts"
+    picture: "https://cdn.tutsplus.com/webdesign/authors/ian-yates/sg-git.png"
     size: "2"
 
 ---
