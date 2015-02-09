@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "27/01/2015 - Tuesday"
+date:   2015-01-27 16:00:00
+categories: science, future
+
+articles:
+  -
+    title: "Brain-to-brain communication has arrived!"
+    author: "meza"
+    summary: |
+      If you watch one thing today, make this it! I can't emphasize enough how important this is, regarding our
+      future! It has made my day!
+    categories:
+      - "science"
+      - "future"
+    url: http://www.ted.com/talks/miguel_nicolelis_brain_to_brain_communication_has_arrived_how_we_did_it
+    quote: "a brain-machine interface is not rocket science, it's just brain research"
+    picture: "/assets/articles/brain-to-brain.png"
+    size: "1"
+
+---
