@@ -1,14 +1,16 @@
 ---
 layout: post
 title:  "28/01/2015 - Wednesday"
-date:   2015-01-28 15:41:20
-categories: education, future, internet of things
+date:   2015-01-28 16:00:00
+categories: future, internet of things, picture, motivation
 
 articles:
   -
     title: "Walk up and use anything"
     author: "meza"
-    summary: "Nagyon jo kezdemenyezes annak erdekeben, hogy mindent kutyut ami mar a neten log _egyszeruen_ lehessen hasznalni barkinek, barhol. Arrol nem is beszelve, hogy bluetooth kutyukon alapul, amihez mar nem keves kozunk volt @matta -val :)"
+    summary: "A very good initiative to integrate device-to-device communication into our lives without the need to install
+    specialized apps. Not to mention that it operates on Bluetooth technology, which @matta and I have vast experiences with
+    from the time we spent creating specialized embedded Bluetooth applications back in the day."
     categories:
       - "future"
       - "internet of things"
@@ -16,20 +18,15 @@ articles:
     url: "http://google.github.io/physical-web/"
     size: "1"
   -
-    title: "Blaaaaaaa"
-    author: "meza"
-    summary: "Apam a mai napig mondogatja, hogy a mi generacionk legnagyobb kincse az internet es a benne rejlo lehetosegek. Szamara es szamomra is ez az oldal egy jo bizonyiteka ennek."
+    title: "52 Places to Go in 2014"
+    author: "designhorf"
+    summary: "No science today. Travel, inspiration, dreams, goals! I wouldn't say much more, let the images, videos and
+    thougths speak for me."
     categories:
-      - "education"
-    url: "http://www.iheartintelligence.com/2014/01/18/beat-the-system-40-free-educational-websites/"
-    picture: "http://fc06.deviantart.net/fs71/f/2012/143/4/1/the_luminous_landscape_pt_9__by_realitydream-d50t851.jpg"
-    size: "1"
-  -
-    title: "Blaaaaaaa"
-    author: "meza"
-    summary: "Apam a mai napig mondogatja, hogy a mi generacionk legnagyobb kincse az internet es a benne rejlo lehetosegek. Szamara es szamomra is ez az oldal egy jo bizonyiteka ennek."
-    categories:
-      - "education"
-    url: "http://www.iheartintelligence.com/2014/01/18/beat-the-system-40-free-educational-websites/"
+      - "picture"
+      - "motivation"
+    url: "http://www.nytimes.com/interactive/2014/01/10/travel/2014-places-to-go.html"
+    quote: "Witness a city in transformation, glimpse exotic animals, explore the past and enjoy that beach before the crowds."
+    picture: "http://graphics8.nytimes.com/newsgraphics/2014/01/12/places-to-go/assets/images/namibia-1564.jpg"
     size: "1"
 ---
