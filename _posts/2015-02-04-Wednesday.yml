@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "04/02/2015 - Wednesday"
+date:   2015-02-04 16:00:00
+categories: product, science, future
+
+articles:
+ -
+   title: "Amazon Echo"
+   author: "designhorf"
+   summary: "I really like the idea, and if they extend the service and put more development into it, I could totally
+   imagine one for home :)"
+   categories:
+     - "product"
+   url: "http://www.amazon.com/oc/echo/ref_=ods_dp_ae"
+   quote: "Amazon Echo is designed around your voice. Ask it for music, news, weather, information, and more. Get answers instantly."
+   picture: "https://d20eksp2oiwjcj.cloudfront.net/images/WhatIsIt.png"
+   size: 1
+ -
+   title: "Print your DNA to fix yourself - hello biohacking"
+   author: "meza"
+   summary: "This isn't really relevant to our profession, but is extremely interesting and sheds a light on what the
+   future holds. These guys can literally print your correct DNA to fix your genetic defects."
+   categories:
+     - "science"
+     - "future"
+   url: "http://blog.cosmosmagazine.com/blog/2015/2/2/company-develops-a-way-to-3d-print-dna-and-design-a-living-creature"
+   quote: "The company is now developing a way in which customers can tinker with the genetic codes of plants and animals,
+   and even design new genetic sequences and creatures on a computer"
+   size: "2"
+
+---
