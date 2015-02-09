@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "02/02/2015 - Sunday"
+date:   2015-02-02 16:00:00
+categories: programming, testing, test automation, communication
+
+articles:
+ -
+   title: "Selenium Introduction"
+   author: "matta"
+   summary: "My first article recommendation. This explains the basics of Selenium 2 from how to set it up with your
+   IDE to getting your first working test framework up and running. There are some smells in it (variable naming,
+   unuseful code, etc.), but it's sufficient to get you off the ground."
+   categories:
+     - "programming"
+     - "testing"
+     - "test automation"
+   url: "http://www.toolsqa.com/selenium-webdriver/selenium-introduction/"
+   size: 1
+ -
+   title: "Slack + Screenhero = <3"
+   author: "meza"
+   summary: "This is going to be very useful for us! It's almost the last piece missing from Slack's ultimate domination.
+   Make sure to sign up, and let's give it a spin!"
+   categories:
+     - "communication"
+   url: "http://slackhq.com/post/109401571065/slack-and-screenhero"
+   picture: "https://screenhero.com/img/blog/voice_chat_release.png"
+   size: "1"
+
+---
