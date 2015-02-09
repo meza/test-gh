@@ -1,26 +1,34 @@
 ---
 layout: post
 title:  "29/01/2015 - Thursday"
-date:   2015-01-29 00:01:33
-categories: education, future, internet of things
+date:   2015-01-29 16:00:00
+categories: sass, education, accessibility, life
 
 articles:
   -
-    title: "List Of 40 Free Educational Websites"
+    title: "Sass Tricks"
     author: "designhorf"
-    summary: "Apam a mai napig mondogatja, hogy a mi generacionk legnagyobb kincse az internet es a benne rejlo lehetosegek. Szamara es szamomra is ez az oldal egy jo bizonyiteka ennek."
+    summary: "I've learned a lot from this website, and I'm sure I will learn even more! For me, it's one of the best sources
+    of new things with good examples and comprihensible tutorials. Here's a collection of sass tricks, which is one of my favourite
+    subjects."
     categories:
+      - "sass"
       - "education"
-    url: "http://www.iheartintelligence.com/2014/01/18/beat-the-system-40-free-educational-websites/"
-    picture: "http://www.iheartintelligence.com/wp-content/uploads/2014/01/erbooks-1024x600.jpg"
+    url: "http://css-tricks.com/snippets/sass/"
     size: "1"
   -
-    title: "Walk up and use anything"
+    title: "Coding with your eyes shut. Literally!"
     author: "meza"
-    summary: "Nagyon jo kezdemenyezes annak erdekeben, hogy mindent kutyut ami mar a neten log _egyszeruen_ lehessen hasznalni barkinek, barhol. Arrol nem is beszelve, hogy bluetooth kutyukon alapul, amihez mar nem keves kozunk volt @matta -val :)"
+    summary: "Florian tells us about how he writes code and blogposts on everyday computers, like
+    you and I. The only difference is, that he's blind since birth. The article is very engaging and sheds some light on
+    what blind people search for and value in websites they use. It's a very valuable lesson for example, that sounds
+    and sound analogies in text can be very helpful, as it can serve as a point of reference. Not to mention the
+    importance of keyboard shortcuts. I for one am inspired to create an accessibility mode for Tailored Tunes where
+    each function has a distinct and recognizable sound."
     categories:
-      - "future"
-      - "internet of things"
-    url: "http://google.github.io/physical-web/"
+      - "accessibility"
+      - "life"
+    url: "http://blog.freecodecamp.com/2015/01/a-vision-of-coding-without-opening-your-eyes.html"
+    picture: "http://3.bp.blogspot.com/-wSVuaCWue8c/VMlbE00tN1I/AAAAAAAAAeM/ynj5XWMA27c/s1600/Florian%2BBeijers.jpg"
     size: "2"
 ---
