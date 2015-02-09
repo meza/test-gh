@@ -20,16 +20,4 @@ articles:
    url: "http://mentalfloss.com/uk/history/27183/where-the-term-computer-bug-came-from"
    localpicture: "/assets/articles/hopper-hero.jpg"
    size: "1"
- -
-   title: "Selenium Introduction"
-   author: "matta"
-   summary: "My first article recommendation. This explains the basics of Selenium 2 from how to set it up with your
-   IDE to getting your first working test framework up and running. There are some smells in it (variable naming,
-   unuseful code, etc.), but it's sufficient to get you off the ground."
-   categories:
-     - "programming"
-     - "testing"
-     - "test automation"
-   url: "http://www.toolsqa.com/selenium-webdriver/selenium-introduction/"
-   size: 1
 ---
