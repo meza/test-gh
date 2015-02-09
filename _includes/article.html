@@ -17,7 +17,11 @@
 	</header>
 
 	{% if article.picture %}
-		<section class="pictureWindow" style="background-image:url({{ article.picture }}); background-size: cover; background-position: center; height:100%; width:50%;">
+        {% assign url = article.picture %}
+        {% if url|slice: 0,1 == '/' %}
+        {% assign url = url|prepend:site.baseurl %}
+        {% endif %}
+		<section class="pictureWindow" style="background-image:url({{ url }}); background-size: cover; background-position: center; height:100%; width:50%;">
 		</section>
 	{% endif %}
 
@@ -49,5 +53,5 @@
 	{% endif %}
 			<a href="{{ article.url }}" target="_blank">read article</a>
 	</footer>
-	
+
 </article>
