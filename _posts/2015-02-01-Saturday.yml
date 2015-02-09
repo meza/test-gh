@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "01/02/2015 - Saturday"
+date:   2015-02-01 16:00:00
+categories: programming, history, Grace Hopper, testing, test automation
+
+articles:
+ -
+   title: "The queen of code"
+   author: "meza"
+   summary: "A very good summary of Grace Hopper's life. We can thank her that we are able to write our code in  plain
+   English. She created the first ever compiler, which translates English into machine code, thus made it possible for
+   software engineering to become popular. On another note, everything she stood for resonates with me well in the sense
+   that I never care what you've done in the past or what your colour and gender is.
+   It all boils down to \"can you do the job now\" or not?"
+   categories:
+     - "programming"
+     - "history"
+     - "Grace Hopper"
+   url: "http://mentalfloss.com/uk/history/27183/where-the-term-computer-bug-came-from"
+   picture: "/assets/articles/hopper-hero.jpg"
+   size: "1"
+ -
+   title: "Selenium Introduction"
+   author: "matta"
+   summary: "My first article recommendation. This explains the basics of Selenium 2 from how to set it up with your
+   IDE to getting your first working test framework up and running. There are some smells in it (variable naming,
+   unuseful code, etc.), but it's sufficient to get you off the ground."
+   categories:
+     - "programming"
+     - "testing"
+     - "test automation"
+   url: "http://www.toolsqa.com/selenium-webdriver/selenium-introduction/"
+   size: 1
+---
