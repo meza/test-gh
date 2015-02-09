@@ -18,5 +18,16 @@ articles:
     quote: "a brain-machine interface is not rocket science, it's just brain research"
     picture: "/assets/articles/brain-to-brain.png"
     size: "1"
+  -
+    title: "List Of 40 Free Educational Websites"
+    author: "designhorf"
+    summary: "My father always says that our generation's biggest treasure is the internet and the opportunities it
+      creates. For him - and for me - this site is the proof of that!"
+    quote: "This is the place to display a quote."
+    categories:
+      - "education"
+    url: "http://www.iheartintelligence.com/2014/01/18/beat-the-system-40-free-educational-websites/"
+    picture: "http://www.iheartintelligence.com/wp-content/uploads/2014/01/erbooks-1024x600.jpg"
+    size: "1"
 
 ---

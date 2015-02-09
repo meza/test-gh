@@ -6,16 +6,6 @@ categories: education, future, internet of things
 
 articles:
   -
-    title: "Akarmi"
-    author: "designhorf"
-    summary: "Apam a mai napig mondogatja, hogy a mi generacionk legnagyobb kincse az internet es a benne rejlo lehetosegek. Szamara es szamomra is ez az oldal egy jo bizonyiteka ennek."
-    quote: "This is the place to display a quote."
-    categories:
-      - "education"
-    url: "http://www.iheartintelligence.com/2014/01/18/beat-the-system-40-free-educational-websites/"
-    picture: "http://alistapart.com/d/_made/d/ALA_412_vision-for-sass_960_403_81.jpg"
-    size: "1"
-  -
     title: "Walk up and use anything"
     author: "meza"
     summary: "Nagyon jo kezdemenyezes annak erdekeben, hogy mindent kutyut ami mar a neten log _egyszeruen_ lehessen hasznalni barkinek, barhol. Arrol nem is beszelve, hogy bluetooth kutyukon alapul, amihez mar nem keves kozunk volt @matta -val :)"
