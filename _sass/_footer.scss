@@ -44,7 +44,7 @@
     font-size: 15px;
     color: $dflt-gray;
     margin-left: -$spacing-unit / 2;
-    // @extend %clearfix;
+    @extend %clearfix;
 }
 
 .footer-col {
