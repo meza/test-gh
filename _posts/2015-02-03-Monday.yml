@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "03/02/2015 - Monday"
+date:   2015-02-03 16:00:00
+categories: design, psychology, programming, podcast
+
+articles:
+ -
+   title: "Men, Women, And Two Thousand Color Names"
+   author: "meza"
+   summary: "A really interesting summary of what counts as more female, and more male colours. This chart can come in
+   handy when we're designing visuals for gender dependent messages. I know, it's a bit manupilative, but that's the
+   ugly truth of marketing. Make sure to click on the image in the article for an interactive map!"
+   categories:
+     - "design"
+     - "psychology"
+   url: "http://www.datapointed.net/2010/09/men-women-color-names/"
+   picture: "http://www.datapointed.net/media/2010/09/his_hers_crop-520x392.jpg"
+   size: 1
+ -
+   title: "DeveloperTea"
+   author: "designhorf"
+   summary: "This is a podcast for developers with short episodes. I already started listening to it with my morning tea"
+   categories:
+     - "programming"
+     - "podcast"
+   url: "http://www.developertea.com/"
+   quote: "A podcast for developers designed to fit inside your tea break. Hosted by @jcutrell, Director of Technology at @whiteboardis."
+   picture: "https://pbs.twimg.com/profile_images/557744034462965760/u-dbRwJT.jpeg"
+   size: "1"
+
+---
