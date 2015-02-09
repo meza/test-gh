@@ -5,7 +5,7 @@
 	<article class="post-box col-{{ totalSize|plus:1 }}">
 		{% assign textBoxSize = '50%' %}
 {% else %}
-	<article class="post-box col-{{ totalSize }} nopic">
+	<article class="post-box col-{{ totalSize }}">
 		{% assign textBoxSize = '100%' %}
 {% endif %}
 
@@ -27,7 +27,7 @@
 			</section>
 	{% endif %}
 	{% if article.snippet %}
-		<section class="code">
+		<section class="code" style="width:{{ textBoxSize }}">
 			<code class="post--snippet" style="width:{{ textBoxSize }}">
 				<p>{{ article.snippet }}</p>
 			</code>
@@ -42,7 +42,11 @@
 		<p>{{ article.summary }}</p>
 	</section>
 
-	<footer class="post--button">
+	{% if article.picture %}
+		<footer class="post--button">
+	{% else %}
+		<footer class="post--button" style="left: 0">
+	{% endif %}
 			<a href="{{ article.url }}" target="_blank">read article</a>
 	</footer>
 	

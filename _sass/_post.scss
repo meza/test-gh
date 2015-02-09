@@ -41,19 +41,12 @@
 
 .post-box {
 
-    // .code,
-    // .post--header,
-    // .post--quote,
-    // .post--summary {
-    //     width: 50%;
-    // }
-
     .post--button {
         background-color: $dflt-green;
         border: 0;
         cursor: pointer;
         // height: 37px;
-        // left: -50%;
+        left: -50%;
         max-height: 37px;
         order: 4;
         padding: 0;
@@ -62,22 +55,6 @@
         z-index: 9999;
     }
 }
-
-// .nopic {
-//     .post--button {
-//         left: 0;
-//         max-height: 37px;
-//         order: 4;
-//         position: relative;
-//     }
-
-//     .code,
-//     .post--header,
-//     .post--quote,
-//     .post--summary {
-//         width: 100%;
-//     }
-// }
 
 .post-box {
     align-items: stretch;
@@ -150,12 +127,6 @@
     }
 
     .post--button {
-        background-color: $dflt-green;
-        border: 0;
-        cursor: pointer;
-        // height: 37px;
-        padding: 0;
-        width: 100%;
 
         a {
             color: $white;
