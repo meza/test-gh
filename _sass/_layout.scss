@@ -19,19 +19,27 @@
 
 .site-title {
     color: $tatu-gray;
-    font-size: 1.3em;
-    line-height: 56px;
-    letter-spacing: 0;
-    margin-bottom: 0;
     float: left;
+    font-size: 1.3em;
+    letter-spacing: 0;
+    line-height: 56px;
+    margin-bottom: 0;
+    text-decoration: none;
 
     &,
     &:visited {
         color: $tatu-gray;
+        text-decoration: none;
     }
 
     img {
         margin-top: -5px;
+    }
+
+    .subHeading {
+        font-size: .7em;
+        font-style: italic;
+        text-decoration: none;
     }
 }
 
@@ -54,26 +62,26 @@
     }
 
     @include max-media($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
         background-color: $background-color;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
+        position: absolute;
+        right: 30px;
         text-align: right;
+        top: 9px;
 
         .menu-icon {
             display: block;
             float: right;
-            width: 36px;
             height: 26px;
             line-height: 0;
             padding-top: 10px;
             text-align: center;
+            width: 36px;
 
             > svg {
-                width: 18px;
                 height: 15px;
+                width: 18px;
 
                 path {
                     fill: $grey-color-dark;
