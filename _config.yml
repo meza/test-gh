@@ -1,14 +1,11 @@
 # Site settings
 title: Tailored Tunes - Article Of The Day
-email: aod@stateshiterlabs.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
+email: hello@tailored-tunes.com
+description: > Article Of The Day is a collection of daily article recommendations from the Tailored Tunes team.
+We use it to keep our interest and view of the world up to date.
 url: "http://meza.github.io" # the base hostname & protocol for your site
 twitter_username: tailored_tunes
-github_username:  jekyll
+github_username:  tailored-tunes
 permalink: /:year-:month-:day-:title.html
 baseurl: /test-gh
 # Build settings
