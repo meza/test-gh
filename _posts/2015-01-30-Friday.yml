@@ -1,35 +1,35 @@
 ---
 layout: post
-title:  "30/01/2015 - Friday"
-date:   2015-01-30 16:00:00
-categories: programming, data flow, picture, motivation
+title:  "01/02/2015 - Saturday"
+date:   2015-02-01 16:00:00
+categories: programming, history, Grace Hopper, testing, test automation
 
 articles:
   -
-    title: "How we handle most data writes"
+    title: "The queen of code"
     author: "meza"
-    summary: "It's not a short article, but is well worth a read. For Tailored Tunes peeps it's a must read, as the
-    playlist share and load monitoring features have a similar architecture. This theory is our best friend when it comes
-    to scalability. The article does not account for data (in)consistency which is very important when you write data
-    and quickly want to read it back. I'm especially proud of our architecture, as Netflix has just announced that they
-    are moving to something we've been using for over a year."
+    summary: "A very good summary of Grace Hopper's life. We can thank her that we are able to write our code in  plain
+    English. She created the first ever compiler, which translates English into machine code, thus made it possible for
+    software engineering to become popular. On another note, everything she stood for resonates with me well in the sense
+    that I never care what you've done in the past or what your colour and gender is.
+    It all boils down to \"can you do the job now\" or not?"
     categories:
       - "programming"
-      - "data flow"
-    url: "http://blog.confluent.io/2015/01/29/making-sense-of-stream-processing/"
-    picture: https://confluentinc.files.wordpress.com/2015/01/slide-00.png
-    quote: "Some people call it stream processing. Others call it Event Sourcing or CQRS."
-    size: "2"
-  -
-    title: "gif-iti"
-    author: "designhorf"
-    summary: "For me, creative visuals won the day again. This guy decided to fuse a completely offline artform
-    with the online world. He has amazing works. Make sure to check out the very first video on the site!"
-    categories:
-      - "picture"
-      - "motivation"
-    url: "http://gif-iti.tumblr.com/"
-    picture: "http://33.media.tumblr.com/c4fa3ab4b48111a282f67499f4a9b0bf/tumblr_mmni1wtCrw1sqatlgo1_500.gif"
-    quote: "The beauty of INSA’s GIF-ITI is that it only truly lives when viewed online"
+      - "history"
+      - "Grace Hopper"
+    url: "http://mentalfloss.com/uk/history/27183/where-the-term-computer-bug-came-from"
+    picture: "/assets/articles/hopper-hero.jpg"
     size: "1"
+  -
+    title: "Selenium Introduction"
+    author: "matta"
+    summary: "My first article recommendation. This explains the basics of Selenium 2 from how to set it up with your
+    IDE to getting your first working test framework up and running. There are some smells in it (variable naming,
+    unuseful code, etc.), but it's sufficient to get you off the ground."
+    categories:
+      - "programming"
+      - "testing"
+      - "test automation"
+    url: "http://www.toolsqa.com/selenium-webdriver/selenium-introduction/"
+    size: 1
 ---
