@@ -16,7 +16,7 @@ articles:
       - "future"
     url: http://www.ted.com/talks/miguel_nicolelis_brain_to_brain_communication_has_arrived_how_we_did_it
     quote: "a brain-machine interface is not rocket science, it's just brain research"
-    picture: "/assets/articles/brain-to-brain.png"
+    localpicture: "/assets/articles/brain-to-brain.png"
     size: "1"
   -
     title: "List Of 40 Free Educational Websites"

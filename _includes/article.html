@@ -1,7 +1,7 @@
 {% assign author = site.data.writers[article.author] %}
 {% assign totalSize = article.size %}
 
-{% if article.picture %}
+{% if article.picture or article.localpicture %}
 	<article class="post-box col-{{ totalSize|plus:1 }}">
 		{% assign textBoxSize = '50%' %}
 {% else %}
@@ -16,10 +16,11 @@
 		</div>
 	</header>
 
-	{% if article.picture %}
+	{% if article.picture or article.localpicture %}
+
         {% assign url = article.picture %}
-        {% if url|slice: 0,1 == '/' %}
-        {% assign url = url|prepend:site.baseurl %}
+        {% if article.localpicture %}
+        {% assign url = article.localpicture|prepend:site.baseurl %}
         {% endif %}
 		<section class="pictureWindow" style="background-image:url({{ url }}); background-size: cover; background-position: center; height:100%; width:50%;">
 		</section>
@@ -46,7 +47,7 @@
 		<p>{{ article.summary }}</p>
 	</section>
 
-	{% if article.picture %}
+	{% if article.picture or article.localpicture %}
 		<footer class="post--button">
 	{% else %}
 		<footer class="post--button" style="left: 0">

@@ -18,7 +18,7 @@ articles:
      - "history"
      - "Grace Hopper"
    url: "http://mentalfloss.com/uk/history/27183/where-the-term-computer-bug-came-from"
-   picture: "/assets/articles/hopper-hero.jpg"
+   localpicture: "/assets/articles/hopper-hero.jpg"
    size: "1"
  -
    title: "Selenium Introduction"
