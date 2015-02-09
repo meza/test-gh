@@ -2,6 +2,7 @@
  * Site header
  */
 .site-header {
+    background-color: $tatu-dark;
     border-top: 5px solid $dflt-green;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
@@ -17,6 +18,7 @@
 }
 
 .site-title {
+    color: $tatu-gray;
     font-size: 26px;
     line-height: 56px;
     letter-spacing: -1px;
@@ -25,7 +27,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $tatu-gray;
     }
 }
 
@@ -38,7 +40,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $tatu-gray;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
