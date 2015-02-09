@@ -2,7 +2,9 @@
  * Site footer
  */
 .site-footer {
+    background-color: $tatu-dark;
     border-top: 1px solid $grey-color-light;
+    color: $tatu-gray;
     padding: $spacing-unit 0;
 }
 
@@ -15,13 +17,34 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.contact-list a,
+.username {
+    color: $dflt-green;
+}
+
+.made-by {
+    float: right;
+    // padding-left: $spacing-unit / 2;
+    position: relative;
+    text-align: center;
+
+    p:last-child {
+        font-size: .8em;
+        margin-top: .7em;
+    }
 }
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: $dflt-gray;
     margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
+    // @extend %clearfix;
 }
 
 .footer-col {
