@@ -3,11 +3,13 @@
 
 {% if article.picture %}
 	<article class="post-box col-{{ totalSize|plus:1 }}">
+		{% assign textBoxSize = '50%' %}
 {% else %}
 	<article class="post-box col-{{ totalSize }} nopic">
+		{% assign textBoxSize = '100%' %}
 {% endif %}
 
-	<header class="post--header">
+	<header class="post--header" style="width:{{ textBoxSize }}">
 		<h1 class="title">{{ article.title }}</h1>
 		<div class="post--category">
 			<p>{{ article.categories[0] }}</p>
@@ -20,19 +22,19 @@
 	{% endif %}
 
 	{% if article.quote %}
-			<section class="post--quote">
+			<section class="post--quote" style="width:{{ textBoxSize }}">
 				<p>{{ article.quote }}</p>
 			</section>
 	{% endif %}
 	{% if article.snippet %}
 		<section class="code">
-			<code class="post--snippet">
+			<code class="post--snippet" style="width:{{ textBoxSize }}">
 				<p>{{ article.snippet }}</p>
 			</code>
 		</section>
 	{% endif %}
 
-	<section class="post--summary">
+	<section class="post--summary" style="width:{{ textBoxSize }}">
 		<figure>
 			<img src="{{ author.photo }}" height="40" width="40" />
 			<figcaption>{{ author.twitter }}</figcaption>
