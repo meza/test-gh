@@ -2,14 +2,14 @@
 layout: post
 title:  "28/01/2015 - Wednesday"
 date:   2015-01-28 16:00:00
-categories: future, internet of things, picture, motivation
+categories: future, internet of things, picture, motivation, travel
 
 articles:
   -
     title: "Walk up and use anything"
     author: "meza"
     summary: "A very good initiative to integrate device-to-device communication into our lives without the need to install
-    specialized apps. Not to mention that it operates on Bluetooth technology, which @matta and I have vast experiences with
+    specialized apps. Not to mention that it operates on Bluetooth technology, which @matta_topr and I have vast experiences with
     from the time we spent creating specialized embedded Bluetooth applications back in the day."
     categories:
       - "future"
@@ -25,6 +25,7 @@ articles:
     categories:
       - "picture"
       - "motivation"
+      - "travel"
     url: "http://www.nytimes.com/interactive/2014/01/10/travel/2014-places-to-go.html"
     quote: "Witness a city in transformation, glimpse exotic animals, explore the past and enjoy that beach before the crowds."
     picture: "http://graphics8.nytimes.com/newsgraphics/2014/01/12/places-to-go/assets/images/namibia-1564.jpg"

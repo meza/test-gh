@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "05/02/2015 - Thursday"
+date:   2015-02-05 16:00:00
+categories: javascript, programming, frontend, lifestyle, startup, travel
+
+articles:
+ -
+   title: "Handling Touch Input With JavaScript"
+   author: "meza"
+   summary: "This is a part of a series about game development. I think this article is not only useful in that world, as
+   it shows how to handle and respond to touch events in Javascript."
+   categories:
+     - "javascript"
+     - "programming"
+     - "frontend"
+   url: "http://blog.mrroa.com/2015/01/25/handling-touch-input-with-javascript/"
+   picture: "http://s.mrroa.com/finger-hand-lens-1338.jpg"
+   quote: "Like with a mouse, you can listen for touch down, move, end, etc. However, users, usually, only have one mouse pointer, whereas users may touch the screen with multiple fingers at the same time."
+   size: 2
+ -
+   title: "How I built a startup while traveling to 20 countries"
+   author: "designhorf"
+   summary: "An interesting piece of writing about the digital nomad lifestyle, traveling and building a startup. It's an
+   ever grwoing community that we as Tailored Tunes are also a part of."
+   categories:
+     - "lifestyle"
+     - "startup"
+     - "travel"
+   url: "https://medium.com/digital-nomad-stories/how-i-built-a-startup-while-traveling-to-20-countries-f0ec3a92bc3c"
+   quote: "Working in an office is a relic of the past."
+   picture: "https://d262ilb51hltx0.cloudfront.net/max/2000/1*ZfIFhOWwH1ebeP77bmQ4ng.jpeg"
+   size: "1"
+
+---
