@@ -5,7 +5,7 @@
     <div class="made-by">
       <p>made by</p>
       <a href="http://www.tailored-tunes.com" target="_blank">
-        
+
       </a>
       <p>Tailored Tunes</p>
     </div>
@@ -53,10 +53,15 @@
         </ul>
       </div>
 
-      
-      
+
+
     </div>
 
   </div>
 
 </footer>
+<script>
+    [].forEach.call(document.querySelectorAll('.post--quote p, .post--summary p'), function(paragraph){
+            paragraph.innerHTML = paragraph.innerHTML.replace(/@([a-z\d_]+)/ig, '<a href="http://twitter.com/$1" target="_blank">@$1</a>');
+    });
+</script>
