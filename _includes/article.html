@@ -9,15 +9,7 @@
 		{% assign textBoxSize = '100%' %}
 {% endif %}
 
-	<header class="post--header" style="width:{{ textBoxSize }}">
-		<h1 class="title">{{ article.title }}</h1>
-		<div class="post--category">
-			<p>{{ article.categories[0] }}</p>
-		</div>
-	</header>
-
 	{% if article.picture or article.localpicture %}
-
         {% assign url = article.picture %}
         {% if article.localpicture %}
         {% assign url = article.localpicture|prepend:site.baseurl %}
@@ -26,18 +18,12 @@
 		</section>
 	{% endif %}
 
-	{% if article.quote %}
-			<section class="post--quote" style="width:{{ textBoxSize }}">
-				<p>{{ article.quote }}</p>
-			</section>
-	{% endif %}
-	{% if article.snippet %}
-		<section class="code" style="width:{{ textBoxSize }}">
-			<code class="post--snippet" style="width:{{ textBoxSize }}">
-				<p>{{ article.snippet }}</p>
-			</code>
-		</section>
-	{% endif %}
+	<header class="post--header" style="width:{{ textBoxSize }}">
+		<h1 class="title">{{ article.title }}</h1>
+		<div class="post--category">
+			<p>{{ article.categories[0] }}</p>
+		</div>
+	</header>
 
 	<section class="post--summary" style="width:{{ textBoxSize }}">
 		<figure>
@@ -47,11 +33,7 @@
 		<p>{{ article.summary }}</p>
 	</section>
 
-	{% if article.picture or article.localpicture %}
-		<footer class="post--button">
-	{% else %}
-		<footer class="post--button" style="left: 0">
-	{% endif %}
+	<footer class="post--button">
 			<a href="{{ article.url }}" target="_blank">read article</a>
 	</footer>
 
