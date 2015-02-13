@@ -77,8 +77,6 @@
 
     .pictureWindow,
     .post--header,
-    .post--quote,
-    .post--snippet,
     .post--summary,
     .post--button {
         flex: 1 1 auto;
@@ -87,10 +85,6 @@
     .pictureWindow {
         background-color: lightgray;
         order: 0;
-    }
-
-    .code {
-        order: 3;
     }
 
     .post--header {
@@ -109,27 +103,6 @@
 		color: darken($dflt-green, 10%);
 		text-decoration: none;
 	}
-
-    .post--quote {
-        color: $grey-color;
-        font-size: 1.15em;
-        font-style: italic;
-        font-weight: 400;
-        order: 2;
-
-        p {
-            padding: 0 1em 0 3em;
-        }
-
-        &:before {
-            content: '“';
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 70px;
-            margin-left: 15px;
-            margin-top: -16px;
-            position: absolute;
-        }
-    }
 
     .post--button {
 
