@@ -94,26 +94,6 @@
 		text-decoration: none;
 	}
 
-    .post--quote {
-        color: $grey-color;
-        font-size: 1.15em;
-        font-style: italic;
-        font-weight: 400;
-
-        p {
-            padding: 0 1em 0 3em;
-        }
-
-        &:before {
-            content: '“';
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 70px;
-            margin-left: 15px;
-            margin-top: -16px;
-            position: absolute;
-        }
-    }
-
     .post--button {
         background-color: $dflt-green;
         cursor: pointer;
@@ -181,12 +161,6 @@
 			text-decoration: none;
 		}
     }
-}
-
-
-.col-2:not(.nopic),
-.col-3:not(.nopic) {
-    
 }
 
 .col-1,
