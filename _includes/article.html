@@ -1,11 +1,15 @@
 {% assign author = site.data.writers[article.author] %}
 {% assign totalSize = article.size %}
+{% assign pictureSize = totalSize|plus:1 %}
+{% assign calcSize = 100|divided_by:pictureSize %}
+{% assign textSize = 100|minus:calcSize %}
+
 
 {% if article.picture or article.localpicture %}
-	<article class="post-box col-{{ totalSize|plus:1 }}">
+	<article class="post-box col-{{ pictureSize }}">
 		{% assign textBoxSize = '50%' %}
 {% else %}
-	<article class="post-box col-{{ totalSize }}">
+	<article class="post-box col-{{ totalSize }} nopic">
 		{% assign textBoxSize = '100%' %}
 {% endif %}
 
@@ -14,18 +18,26 @@
         {% if article.localpicture %}
         {% assign url = article.localpicture|prepend:site.baseurl %}
         {% endif %}
-		<section class="pictureWindow" style="background-image:url({{ url }}); background-size: cover; background-position: center; height:100%; width:50%;">
+		<section class="pictureWindow" style="background-image:url({{ url }}); background-size: cover; background-position: center; height:100%; width:calc(100%/{{pictureSize}});">
 		</section>
 	{% endif %}
 
-	<header class="post--header">
+	{% if article.picture or article.localpicture %}
+		<header class="post--header" style="width:{{ textSize|minus:1 }}%">
+	{% else %}
+		<header class="post--header">
+	{% endif %}
 		<h1 class="title">{{ article.title }}</h1>
 		<div class="post--category">
 			<p>{{ article.categories[0] }}</p>
 		</div>
 	</header>
 
-	<section class="post--summary">
+	{% if article.picture or article.localpicture %}
+		<section class="post--summary" style="width:{{ textSize|minus:1 }}%">
+	{% else %}
+		<section class="post--summary">
+	{% endif %}
 		<figure>
 			<img src="{{ author.photo }}" height="40" width="40" />
 			<figcaption><a href="http://www.twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a></figcaption>

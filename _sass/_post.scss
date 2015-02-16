@@ -39,6 +39,24 @@
     @extend %flexbox;
 }
 
+.nopic {
+    .post--header {
+        width: 100%;
+    }
+}
+
+.post-box:not(.nopic) {
+    .post--header,
+    .post--summary,
+    .pictureWindow {
+        width: 50%;
+
+        @include max-media($on-laptop) {
+            width: 100%;
+        }
+    }
+}
+
 .post-box {
     background-color: #fff;
     border-radius: $base-border-radius;
@@ -54,11 +72,6 @@
     .post--summary,
     .pictureWindow {
         float: left;
-        width: 50%;
-
-        @include max-media($on-laptop) {
-            width: 100%;
-        }
     }
 
     .pictureWindow {
@@ -168,6 +181,12 @@
 			text-decoration: none;
 		}
     }
+}
+
+
+.col-2:not(.nopic),
+.col-3:not(.nopic) {
+    
 }
 
 .col-1,
