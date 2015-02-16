@@ -26,19 +26,6 @@
 		</section>
 	{% endif %}
 
-	{% if article.quote %}
-			<section class="post--quote" style="width:{{ textBoxSize }}">
-				<p>{{ article.quote }}</p>
-			</section>
-	{% endif %}
-	{% if article.snippet %}
-		<section class="code" style="width:{{ textBoxSize }}">
-			<code class="post--snippet" style="width:{{ textBoxSize }}">
-				<p>{{ article.snippet }}</p>
-			</code>
-		</section>
-	{% endif %}
-
 	<section class="post--summary" style="width:{{ textBoxSize }}">
 		<figure>
 			<img src="{{ author.photo }}" height="40" width="40" />
