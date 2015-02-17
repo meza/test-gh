@@ -39,35 +39,28 @@
     @extend %flexbox;
 }
 
-.post-box {
-
-    .post--button {
-        background-color: $dflt-green;
-        border: 0;
-        cursor: pointer;
-        // height: 37px;
-        left: -50%;
-        max-height: 37px;
-        order: 4;
-        padding: 0;
-        position: relative;
+.nopic {
+    .post--header {
         width: 100%;
-        z-index: 9999;
+    }
+}
+
+.post-box:not(.nopic) {
+    .post--header,
+    .post--summary,
+    .pictureWindow {
+        width: 50%;
+
+        @include max-media($on-laptop) {
+            width: 100%;
+        }
     }
 }
 
 .post-box {
-    align-items: stretch;
-    -webkit-align-items: stretch;
     background-color: #fff;
     border-radius: $base-border-radius;
     box-sizing: border-box;
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-direction: column;
-    -webkit-flex-direction: column;
     margin: 0 2% 2em;
     overflow: hidden;
 
@@ -75,21 +68,18 @@
         height: 420px;
     }
 
-    .pictureWindow,
     .post--header,
     .post--summary,
-    .post--button {
-        flex: 1 1 auto;
+    .pictureWindow {
+        float: left;
     }
 
     .pictureWindow {
         background-color: lightgray;
-        order: 0;
     }
 
     .post--header {
         background-color: #fff;
-        order: 1;
         text-align: center;
 
         h1 {
@@ -105,13 +95,21 @@
 	}
 
     .post--button {
+        background-color: $dflt-green;
+        cursor: pointer;
+        height: 37px;
+        padding: 0;
+        position: relative;
+        top: 383px;
 
         a {
             color: $white;
             display: block;
             font-size: 1.1rem;
-            height: inherit;
+            left: 0;
             padding-top: 6px;
+            position: absolute;
+            right: 0;
             text-align: center;
             text-decoration: none;
             text-transform: uppercase;
@@ -120,12 +118,17 @@
         &:hover {
             background-color: darken($dflt-green, 10%);
         }
+
+        @include max-media($on-laptop) {
+            float: left;
+            position: initial;
+            width: 100%;
+        }
     }
 }
 
 .post--summary {
     line-height: 1.6em;
-    order: 4;
 
     p {
         padding: 0 1em;
