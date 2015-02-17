@@ -100,6 +100,11 @@
         padding: 0;
         position: relative;
         top: 383px;
+        transition: background-color .1s;
+
+        &:hover {
+            background-color: $tatu-dark!important;
+        }
 
         a {
             color: $white;
