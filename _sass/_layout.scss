@@ -110,12 +110,28 @@
 /**
  * Page content
  */
+.intro {
+    font-size: 1.2em;
+    font-weight: 400;
+
+    p:nth-child(2) {
+        font-size: .7em;
+        font-weight: 300;
+    }
+
+    p:nth-child(3) {
+        margin-bottom: 1.5em;
+    }
+}
+
 .page-content {
     padding: $spacing-unit 0;
 }
 
 .page-heading {
-    font-size: 20px;
+    color: $tatu-dark;
+    font-size: 2em;
+    font-weight: 500;
 }
 
 .post-list {
