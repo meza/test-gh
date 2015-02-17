@@ -10,31 +10,23 @@ layout: default
             Hello, and welcome to our little secret space. Here, you can find a stream of articles we, at Tailored Tunes
             share with each other to inspire. motivate and to spark non-work related discussions.
         </p>
+
         <p class="page-heading">What's your article of the day?</p>
+
         <p>
-            We're posting once a day. Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via RSS</a> or
+            We're posting once a day. Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via
+            RSS</a> or
             <a href="http://www.twitter.com/Tailored_Tunes" target="_blank">Twitter</a> and don't miss out!
         </p>
 
     </div>
-    <ul class="post-list">
+    <article class="post-content">
         {% for post in paginator.posts %}
-        <!-- <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-            <h2>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-        </li> -->
-
-        <article class="post-content">
-            {% for article in post.articles %}
-            {% include article.html %}
-            {% endfor %}
-        </article>
-
+        {% for article in post.articles %}
+        {% include article.html %}
         {% endfor %}
-    </ul>
+        {% endfor %}
+    </article>
 
     <div class="pagination">
         {% if paginator.previous_page %}
