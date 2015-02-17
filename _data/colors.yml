@@ -1,0 +1,99 @@
+os:
+  color: "#5ab82f"
+  name: "os"
+
+data-flow:
+  color: "#5ab82f"
+  name: "data-flow"
+
+science:
+  color: "#3cdeda"
+  name: "science"
+
+testing:
+  color: "#4697e0"
+  name: "testing"
+
+computer:
+  color: "#4697e0"
+  name: "computer"
+
+frontend:
+  color: "#4697e0"
+  name: "frontend"
+
+programming:
+  color: "#4697e0"
+  name: "programming"
+
+javascript:
+  color: "#4697e0"
+  name: "javascript"
+
+sass:
+  color: "#4697e0"
+  name: "sass"
+
+future:
+  color: "#ea791f"
+  name: "future"
+
+startup:
+  color: "#cacec6"
+  name: "startup"
+
+history:
+  color: "#cacec6"
+  name: "history"
+
+podcast:
+  color: "#cacec6"
+  name: "podcast"
+
+internet-of-history:
+  color: "#f1a775"
+  name: "internet-of-history"
+
+psychology:
+  color: "#208a83"
+  name: "psychology"
+
+product:
+  color: "#208a83"
+  name: "product"
+
+accessibility:
+  color: "#62e19f"
+  name: "accessibility"
+
+picture:
+  color: "#62e19f"
+  name: "picture"
+
+communication:
+  color: "#62e19f"
+  name: "communication"
+
+lifestyle:
+  color: "#d425a8"
+  name: "lifestyle"
+
+design:
+  color: "#d425a8"
+  name: "design"
+
+education:
+  color: "#d425a8"
+  name: "education"
+
+travel:
+  color: "#8280de"
+  name: "travel"
+
+motivation:
+  color: "#8280de" 
+  name: "motivation"
+
+life:
+  color: "#ed6059"
+  name: "life"

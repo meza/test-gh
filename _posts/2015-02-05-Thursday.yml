@@ -15,7 +15,8 @@ articles:
      - "programming"
      - "frontend"
    url: "http://blog.mrroa.com/2015/01/25/handling-touch-input-with-javascript/"
-   picture: "http://s.mrroa.com/finger-hand-lens-1338.jpg"
+   # picture: "http://s.mrroa.com/finger-hand-lens-1338.jpg"
+   localpicture: "/assets/articles/finger-hand-lens-1338.jpg"
    quote: "Like with a mouse, you can listen for touch down, move, end, etc. However, users, usually, only have one mouse pointer, whereas users may touch the screen with multiple fingers at the same time."
    size: 1
  -

@@ -95,12 +95,16 @@
 	}
 
     .post--button {
-        background-color: $dflt-green;
         cursor: pointer;
         height: 37px;
         padding: 0;
         position: relative;
         top: 383px;
+        transition: background-color .1s;
+
+        &:hover {
+            background-color: $tatu-dark!important;
+        }
 
         a {
             color: $white;
@@ -113,10 +117,6 @@
             text-align: center;
             text-decoration: none;
             text-transform: uppercase;
-        }
-
-        &:hover {
-            background-color: darken($dflt-green, 10%);
         }
 
         @include max-media($on-laptop) {
