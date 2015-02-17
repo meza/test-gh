@@ -94,16 +94,6 @@
 		text-decoration: none;
 	}
 
-    @each $color in $colors {
-         .#{nth($color, 1)} {
-            background-color: nth($color, 2);
-
-            &:hover {
-                background-color: darken(nth($color, 2), 10%);
-            }
-         }
-    }
-
     .post--button {
         cursor: pointer;
         height: 37px;

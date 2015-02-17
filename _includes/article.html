@@ -1,9 +1,10 @@
 {% assign author = site.data.writers[article.author] %}
+{% assign categories = article.categories[0] %}
+{% assign category = site.data.colors[categories] %}
 {% assign totalSize = article.size %}
 {% assign pictureSize = totalSize|plus:1 %}
 {% assign calcSize = 100|divided_by:pictureSize %}
 {% assign textSize = 100|minus:calcSize %}
-
 
 {% if article.picture or article.localpicture %}
 	<article class="post-box col-{{ pictureSize }}">
@@ -45,7 +46,7 @@
 		<p>{{ article.summary }}</p>
 	</section>
 
-	<footer class="post--button {{ article.categories[0] }}">
+	<footer class="post--button {{ category.name }}" style="background-color: {{ category.color }}" >
 			<a href="{{ article.url }}" target="_blank">read article</a>
 	</footer>
 
