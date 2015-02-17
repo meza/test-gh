@@ -114,12 +114,12 @@
     font-size: 1.2em;
     font-weight: 400;
 	text-align: center;
-    p:nth-child(2) {
+    p:nth-child(3), p:nth-child(1) {
         font-size: .7em;
         font-weight: 300;
     }
 
-    p:nth-child(3) {
+    p:nth-child(2) {
         margin-bottom: 1.5em;
     }
 }
