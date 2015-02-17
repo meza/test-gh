@@ -94,10 +94,6 @@
 		text-decoration: none;
 	}
 
-    $colors: os $ml100, data-flow $ml100, science $ml70, testing $ml30, computer $ml30, frontend $ml30, programming $ml30, javascript $ml30, 
-    sass $ml30, future $ml20, startup $unisex, history $unisex, podcast $unisex, internet-of-things $fml10, psychology $fml20, product $fml20,
-    accessibility $fml30, picture $fml30, communication $fml30, lifestyle $fml40, design $fml40, education $fml40, travel $fml50, motivation $fml50,
-    life $fml60;
     @each $color in $colors {
          .#{nth($color, 1)} {
             background-color: nth($color, 2);
