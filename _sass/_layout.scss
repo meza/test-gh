@@ -137,4 +137,26 @@
     font-size: 24px;
 }
 
+.pagination {
+    text-align: center;
+
+    a {
+        text-decoration: none;
+    }
+
+    .page_number {
+    }
+
+    .pagination__style {
+        border: 1px solid $tatu-dark;
+        color: $tatu-dark;
+        padding: 5px;
+        transition: all .1s;
+
+        &:hover {
+            background-color: $tatu-dark;
+            color: $tatu-gray;
+        }
+    }
+}
 
