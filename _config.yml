@@ -8,7 +8,7 @@ url: "http://test-gh.tailored-tunes.com" # the base hostname & protocol for your
 twitter_username: tailored_tunes
 github_username:  tailored-tunes
 permalink: /:year-:month-:day-:title.html
-baseurl: /test-gh
+baseurl:
 # Build settings
 markdown: kramdown
 exclude: [vendor]
