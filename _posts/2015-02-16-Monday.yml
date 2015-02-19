@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "16/02/2015 - Monday"
+date:   2015-02-16 16:00:00
+categories: picture, frontend, programming
+
+articles:
+ -
+   title: "How I Drastically Improved My Photography with Just 2 Little Decisions "
+   author: "designhorf"
+   summary: "If you buy yourself the most recent gear, that doesn't make you a good photographer. You can achieve amazing results
+   even with an entry level DSLR. All you need is a lot of trial-and-error and perseverance"
+   categories:
+     - "picture"
+   url: "https://iso.500px.com/how-i-drastically-improved-my-photography-with-just-2-little-decisions/"
+   picture: "https://drscdn.500px.org/photo/96319121/m=900/ac22dd5be9641c5a6215562e9159126e"
+   size: 1
+ -
+   title: "Style checkbox with pure css"
+   author: "meza"
+   summary: "AI love these out of the box things! Amazing styling with native CSS. Although the use embedded images which
+   puts me off a bit, but the result is brilliant."
+   categories:
+     - "frontend"
+     - "programming"
+   url: "http://www.sevensignature.com/blog/code/dont-stick-default-style-checkbox-pure-css"
+   size: 1
+---
