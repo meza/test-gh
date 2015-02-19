@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "06/02/2015 - Friday"
+date:   2015-02-06 16:00:00
+categories: frontend, programming, science,  bio-informatics
+
+articles:
+ -
+   title: "Animating Images With CSS Keyframes"
+   author: "designhorf"
+   summary: "CSS Animations are one of my favourite topics. This tutorial is a simple, yet effective example of how to add
+   some extra to a website that's not obtrusive grabs the attention of the visitor"
+   categories:
+     - "frontend"
+     - "programming"
+
+   url: "http://www.pencilscoop.com/2014/04/animating-images-with-css-keyframes/"
+   quote: "Keyframing is such an incredible facet of CSS and I feel we’re only really scratching the surface as to what’s possible."
+   picture: "http://cdn.pencilscoop.netdna-cdn.com/wp-content/uploads/2014/04/windmill-example1.jpg"
+   size: "1"
+ -
+   title: "Harvard cracks DNA storage"
+   author: "meza"
+   summary: "As soon as they are able to make this widly and easily available, the way we know data storage will cease to exist.
+   The only problem we'll be having is how to sort all the data we keep"
+   categories:
+     - "science"
+     - "bio-informatics"
+   url: "http://www.extremetech.com/extreme/134672-harvard-cracks-dna-storage-crams-700-terabytes-of-data-into-a-single-gram"
+   picture: "http://www.extremetech.com/wp-content/uploads/2012/08/coding-decoding-dna-storage-640x413.jpg"
+   quote: "A bioengineer and geneticist at Harvard’s Wyss Institute have successfully stored 5.5 petabits of data — around 700 terabytes — in a single gram of DNA"
+   size: 1
+
+---
