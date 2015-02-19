@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "08/02/2015 - Sunday"
+date:   2015-02-08 16:00:00
+categories:
+
+articles:
+ -
+   title: "Bash Shortcuts For Maximum Productivity"
+   author: "meza"
+   summary: "Since we all are using bash all the time, it might be worth checking up on what we know - and what we don't.
+   I'm going to print off a cheat-sheet of these shortcuts and paste it on my desk. I highly recommend doing the same."
+   categories:
+     - "computer"
+   url: "http://www.skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/"
+   quote: "learning some of these shortcuts will not only allow you to zip around bash commands with absurd ease :), but can also make you more proficient in using a variety of other *nix applications"
+   size: 1
+
+---
