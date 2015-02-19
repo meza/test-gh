@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "09/02/2015 - Monday"
+date:   2015-02-09 16:00:00
+categories: programming, history, design
+
+articles:
+ -
+   title: "Fuck Off As A Service"
+   author: "matta"
+   summary: "My choice for today helps developers speak their mind when they have a problem with someone or something :)"
+   categories:
+     - "programming"
+   url: "http://foaas.com/"
+   quote: "FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to fuck off."
+   size: 1
+ -
+   title: "Lost typeface printing blocks found in river Thames"
+   author: "meza"
+   summary: "My one today is only very loosely connected to us. Just as we'd think that we know 'all the things' and can't possibly find anything new in the world of printing, a lost typeface emerges from the bottom of the Thames. How cool is that?"
+   categories:
+     - "history"
+     - "design"
+   url: "http://www.bbc.co.uk/news/uk-31188255"
+   size: 1
+---
