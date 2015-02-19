@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "10/02/2015 - Tuesday"
+date:   2015-02-10 16:00:00
+categories: history, science, design
+
+articles:
+ -
+   title: "Nikola Tesla"
+   author: "matta"
+   summary: "My article today introduces a very interesting man from an angle you might not know him from."
+   categories:
+     - "history"
+     - "science"
+   url: "http://theoatmeal.com/comics/tesla"
+   localpicture: "/assets/articles/nikola-tesla2.png"
+
+   size: 1
+ -
+   title: "Why Is The Dollar Sign A Letter S?"
+   author: "meza"
+   summary: "Now this again isn't really connected to our profession, but is a a very interesting piece of history, and
+   one might read some user experience - form follows function - meaning into it."
+   categories:
+     - "history"
+     - "design"
+   url: "http://observationdeck.io9.com/why-is-the-dollar-sign-a-letter-s-1683940575"
+   picture: "http://i.kinja-img.com/gawker-media/image/upload/s--lTnDkDDU--/c_fit,fl_progressive,q_80,w_636/vuftm7yzjefeeelgutve.png"
+   quote: "So merchants devised a simple and obvious shorthand"
+   size: 1
+---
