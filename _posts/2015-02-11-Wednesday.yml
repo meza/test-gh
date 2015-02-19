@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "11/02/2015 - Wednesday"
+date:   2015-02-11 16:00:00
+categories: javascript, programming, frontend
+
+articles:
+ -
+   title: "Concurrency model and Event Loop"
+   author: "meza"
+   summary: "I was never aware of how JavaScript handles concurrency, or what setTimeout(..,, 0) did.
+   This article explains it pretty well."
+   categories:
+     - "javascript"
+     - "programming"
+   url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop"
+   picture: "https://developer.mozilla.org/files/4617/default.svg"
+   size: 1
+ -
+   title: "CSS Puns & CSS Jokes"
+   author: "designhorf"
+   summary: "CSS humor, with an edge to it"
+   categories:
+     - "frontend"
+   url: "http://saijogeorge.com/css-puns/"
+   picture: "http://saijogeorge.com/css-puns/images/twitter-banner.png"
+   size: 1
+---
