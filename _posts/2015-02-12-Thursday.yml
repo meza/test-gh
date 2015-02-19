@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "12/02/2015 - Thursday"
+date:   2015-02-12 16:00:00
+categories: computer, programming
+
+articles:
+ -
+   title: "HTTP2"
+   author: "meza"
+   summary: "A very well put summary of how the current HTTP protocoll is broken, and what is coming with
+   HTTP2 to address those issues. It's a must read!"
+   categories:
+     - "computer"
+     - "programming"
+   url: "http://daniel.haxx.se/http2/http2-v1.9.pdf"
+   size: 1
+---
