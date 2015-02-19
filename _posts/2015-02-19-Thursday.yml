@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "19/02/2015 - Thursday"
+date:   2015-02-19 16:00:00
+categories: security, programming
+
+articles:
+ -
+   title: "HTML% Security Cheat Sheet"
+   author: "meza"
+   summary: "A very thorough checklist of things we need to consider when building - and testing - websites. This list
+   is something we all need to save as a bookmark and refer to it in our Definition of Done"
+   categories:
+     - "security"
+     - "programming"
+   url: "https://www.owasp.org/index.php/HTML5_Security_Cheat_Sheet"
+   size: 1
+---

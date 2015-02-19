@@ -91,9 +91,13 @@ travel:
   name: "travel"
 
 motivation:
-  color: "#8280de" 
+  color: "#8280de"
   name: "motivation"
 
 life:
   color: "#ed6059"
   name: "life"
+
+security:
+  color: "#000000"
+  name: "security"
