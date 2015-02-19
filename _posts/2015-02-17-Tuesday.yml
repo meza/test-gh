@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "17/02/2015 - Tuesday"
+date:   2015-02-17 16:00:00
+categories: javascript, programming
+
+articles:
+ -
+   title: "You don't know JS"
+   author: "meza"
+   summary: "A very nice book series about the internals of JavaScript. I'm going to start reading these, as they seem
+   to cover topics I don't know much about"
+   categories:
+     - "javascript"
+     - "programming"
+   url: "https://github.com/getify/You-Dont-Know-JS/blob/master/README.md#you-dont-know-js-book-series"
+   size: 1
+---
