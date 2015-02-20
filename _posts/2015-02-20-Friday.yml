@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "20/02/2015 - Friday"
+date:   2015-02-20 19:00:00
+categories: music, computer
+
+articles:
+ -
+   title: "All the ghostly sounds that are lost when you compress to mp3"
+   author: "meza"
+   summary: "Since I'm involved in mix engineering, I have a home studio setup. People usually never get
+   why it's really important for mix engineers to have a "very bloody expensive" set of speakers to work on.
+   This shows what is left out of the mp3, and what we can hear over consumer speakers is yet another leap
+   like this both in sound, and the stereo image."
+   categories:
+     - "music"
+     - "computer"
+   url: "http://www.deathandtaxesmag.com/237292/all-the-ghostly-sounds-that-are-lost-when-you-compress-to-mp3/"
+   quote: "First, these are real, actual sounds that your ear can easily hear. You don’t have to be some snobby audiophile asshole."
+   size: 1
+---
