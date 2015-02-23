@@ -67,6 +67,10 @@
     text-align: center;
     margin-top: -55px;
 
+    @include max-media($desktop) {
+        margin-top: 0;
+    }    
+
     p:last-child {
         font-size: .8em;
         margin-top: .7em;
@@ -74,6 +78,12 @@
 
     img {
         margin-right: 0;
+
+        @include max-media($desktop) {
+            height: 110px;
+            margin: 0 auto;
+            width: 85px;
+        }
     }
 }
 
