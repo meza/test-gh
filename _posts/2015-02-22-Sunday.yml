@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "22/02/2015 - Sunday"
+date:   2015-02-22 19:00:00
+categories: programming
+
+articles:
+ -
+   title: "DevOps manifesto"
+   author: "meza"
+   summary: "A nice guideline to what we need to keep focused on while building a company culture. It would be wise to
+     periodically re-visit this checklist and make sure we align to all that we currently believe in and enjoy doing."
+   categories:
+     - "programming"
+   url: "http://devopschecklist.com/"
+   size: 1
+---

@@ -50,6 +50,11 @@ podcast:
   color: "#cacec6"
   name: "podcast"
 
+music:
+  color: "#cacec6"
+  name: "podcast"
+
+
 internet-of-history:
   color: "#f1a775"
   name: "internet-of-history"
