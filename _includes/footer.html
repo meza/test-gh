@@ -1,16 +1,55 @@
+{% assign author1 = site.data.writers["designhorf"] %}
+{% assign author2 = site.data.writers["meza"] %}
+{% assign author3 = site.data.writers["matta"] %}
+
 <footer class="site-footer">
 
   <div class="wrapper">
+    <h2 class="footer-heading">{{ site.title }}</h2>
 
-    <div class="made-by">
+    <!--div class="made-by">
       <p>made by</p>
       <a href="http://www.tailored-tunes.com" target="_blank">
         <img src="{{ site.baseurl }}/assets/tatu-logo.png" alt="Tailored Tunes" title="Tailored Tunes" height="80" width="80" /></a>
       </a>
       <p>Tailored Tunes</p>
-    </div>
+    </div-->
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <div class="authors">
+        <div class="author">
+          <figure>
+          <img src="{{ author1.photo }}" height="70" width="70" />
+          <figcaption>
+            <a href="http://www.twitter.com/{{ author1.twitter }}" target="_blank">
+              @{{ author1.twitter }}
+            </a>
+          </figcaption>
+        </figure>
+        </div>
+        
+
+        <div class="author">
+          <figure>
+            <img src="{{ author2.photo }}" height="70" width="70" />
+            <figcaption>
+              <a href="http://www.twitter.com/{{ author2.twitter }}" target="_blank">
+                @{{ author2.twitter }}
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="author">
+          <figure>
+            <img src="{{ author3.photo }}" height="70" width="70" />
+            <figcaption>
+              <a href="http://www.twitter.com/{{ author3.twitter }}" target="_blank">
+                @{{ author3.twitter }}
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
@@ -21,8 +60,8 @@
       </div>
 
       <div class="footer-col  footer-col-2">
+        <p class="followus">Follow us on</p>
         <ul class="social-media-list">
-          <span>Follow us on </span>
           {% if site.github_username %}
           <li>
             <a href="https://github.com/{{ site.github_username }}" target="_blank">
@@ -51,8 +90,7 @@
         </ul>
       </div>
 
-
-
+      
     </div>
 
   </div>
@@ -62,4 +100,6 @@
     [].forEach.call(document.querySelectorAll('.post--quote p, .post--summary p'), function(paragraph){
             paragraph.innerHTML = paragraph.innerHTML.replace(/@([a-z\d_]+)/ig, '<a href="http://twitter.com/$1" target="_blank">@$1</a>');
     });
+
+    console.log({{site.data.writers}});
 </script>
