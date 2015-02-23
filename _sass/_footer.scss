@@ -137,6 +137,10 @@
     .author {
         display: inline-flex;
 
+        .full-name {
+            margin-bottom: 5px;
+        }
+
         img {
             border: 1px solid $dflt-green;
             border-radius: 50%;
@@ -150,9 +154,14 @@
             text-decoration: none;
         }
 
-        figcaption {
+        figcaption:not(.status) {
             color: $dflt-gray;
         }
+    }
+
+    .status {
+        color: $dflt-green;
+        margin-top: 0;
     }
 }
 

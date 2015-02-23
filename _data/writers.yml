@@ -1,11 +1,17 @@
 designhorf:
   twitter: "designhorf"
   photo: "https://pbs.twimg.com/profile_images/442785924447875072/HWcVbUbi_400x400.jpeg"
+  fullName: "Ferenc Horvath"
+  title: "Frontend"
 
 meza:
   twitter: "vsbmeza"
   photo: "https://pbs.twimg.com/profile_images/522119742237462528/DzST7rlM.jpeg"
+  fullName: "Marton Meszaros"
+  title: "Backend"
 
 matta:
   twitter: "matta_topr"
   photo: "https://pbs.twimg.com/profile_images/507885117625212928/6xj2MEPx.jpeg"
+  fullName: "Robert Kiss"
+  title: "Break 'em all"

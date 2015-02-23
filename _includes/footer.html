@@ -15,9 +15,15 @@
         <div class="author">
           <a href="http://www.twitter.com/{{ author[1].twitter }}" target="_blank">
             <figure>
+              <figcaption class="full-name">
+                  {{ author[1].fullName }}
+              </figcaption>
               <img src="{{ author[1].photo }}" height="80" width="80" />
               <figcaption>
                   @{{ author[0] }}
+              </figcaption>
+              <figcaption class="status">
+                  {{ author[1].title }}
               </figcaption>
             </figure>
           </a>
