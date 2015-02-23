@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "23/02/2015 - Monday"
+date:   2015-02-23 19:00:00
+categories: javascript, programming
+
+articles:
+ -
+   title: "Overview of ECMAScript 6 features"
+   author: "meza"
+   summary: "ECMAScript 6 is the upcoming version of the ECMAScript standard, and it's going to patch up a few idiosyncrasies
+    of the JavasCript we know now. This article explains all the new features we should know about, as this is the future!"
+   categories:
+     - "javascript"
+     - "programming"
+   url: "https://github.com/lukehoban/es6features"
+   size: 1
+---
