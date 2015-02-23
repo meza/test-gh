@@ -53,6 +53,7 @@ img {
  */
 figure > img {
     display: block;
+    margin: 0 auto;
 }
 
 figcaption {
@@ -182,8 +183,8 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 35px;
+        height: 35px;
         vertical-align: middle;
 
         path {

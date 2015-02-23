@@ -6,21 +6,56 @@
     border-top: 1px solid $grey-color-light;
     color: $tatu-gray;
     padding: $spacing-unit 0;
+
+    figcaption {
+        font-size: 12px;
+        margin-top: 5px;
+    }
 }
 
 .footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.followus {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.m-icons {
+    float: left;
+    width: 100%;
+
+    @include max-media($desktop) {
+        margin-top: 15px;
+    }
 }
 
 .contact-list,
-.social-media-list {
+.sm-list {
     list-style: none;
     margin-left: 0;
+
+    li:nth-child(2) {
+        margin: 0 20px;
+    }
+
+    li {
+        margin: 0 auto;
+    }
 
     a {
         text-decoration: none;
     }
+}
+
+.sm-list {
+    display: flex;
+    margin: 0 auto;
+    max-width: 200px;
 }
 
 .contact-list a,
@@ -29,14 +64,26 @@
 }
 
 .made-by {
-    float: right;
-    // padding-left: $spacing-unit / 2;
-    position: relative;
     text-align: center;
+    margin-top: -55px;
+
+    @include max-media($desktop) {
+        margin-top: 0;
+    }    
 
     p:last-child {
         font-size: .8em;
         margin-top: .7em;
+    }
+
+    img {
+        margin-right: 0;
+
+        @include max-media($desktop) {
+            height: 110px;
+            margin: 0 auto;
+            width: 85px;
+        }
     }
 }
 
@@ -50,7 +97,7 @@
 .footer-col {
     float: left;
     margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    // padding-left: $spacing-unit / 2;
 }
 
 .footer-col-1 {
@@ -66,6 +113,70 @@
 .footer-col-3 {
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
     width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+.email {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.email,
+.made-by {
+    float: left;
+    width: 25%;
+
+    @include max-media($desktop) {
+        width: 100%;
+    }
+}
+
+.no-decoration {
+    text-decoration: none;
+
+    figcaption {
+        color: $dflt-gray;
+    }
+}
+
+.authors {
+    float: left;
+    text-align: center;
+    width: 50%;
+
+    @include max-media($desktop) {
+        margin: 15px auto;
+        width: 100%;
+    }
+
+    .author {
+        display: inline-flex;
+
+        .full-name {
+            margin-bottom: 5px;
+        }
+
+        img {
+            border: 1px solid $dflt-green;
+            border-radius: 50%;
+        }
+
+        &:nth-child(2) {
+            margin: 0 4%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        figcaption:not(.status) {
+            color: $dflt-gray;
+        }
+    }
+
+    .status {
+        color: $dflt-green;
+        margin-top: 0;
+    }
 }
 
 @include min-media($on-laptop) {
