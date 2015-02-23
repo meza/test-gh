@@ -36,6 +36,7 @@ layout: null
                         {{ article.author }}
                     {% endif %}
                     </span> | <a href="{{article.url}}" target="_blank">Read article</a></p>
+                    <img src="http://www.google-analytics.com/collect?v=1&tid=UA-36818483-3&t=event&ec=RSS&ea=view&el={{ post.url | prepend: site.baseurl | UrlEncode }}&cid=0001"/>
                 ]]>
             </description>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
