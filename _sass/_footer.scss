@@ -6,10 +6,16 @@
     border-top: 1px solid $grey-color-light;
     color: $tatu-gray;
     padding: $spacing-unit 0;
+
+    figcaption {
+        font-size: 12px;
+        margin-top: 5px;
+    }
 }
 
 .footer-heading {
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 500;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -23,6 +29,10 @@
     float: left;
     margin-top: 30px;
     width: 100%;
+
+    @include max-media($desktop) {
+        margin-top: 15px;
+    }
 }
 
 .contact-list,
@@ -100,6 +110,10 @@
 .made-by {
     float: left;
     width: 25%;
+
+    @include max-media($desktop) {
+        width: 100%;
+    }
 }
 
 .no-decoration {
@@ -114,6 +128,11 @@
     float: left;
     text-align: center;
     width: 50%;
+
+    @include max-media($desktop) {
+        margin: 15px auto;
+        width: 100%;
+    }
 
     .author {
         display: inline-flex;
