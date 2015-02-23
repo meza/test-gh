@@ -1,5 +1,5 @@
-{% assign author1 = site.data.writers["designhorf"] %}
-{% assign author2 = site.data.writers["meza"] %}
+{% assign author1 = site.data.writers["meza"] %}
+{% assign author2 = site.data.writers["designhorf"] %}
 {% assign author3 = site.data.writers["matta"] %}
 
 <footer class="site-footer">
@@ -7,59 +7,61 @@
   <div class="wrapper">
     <h2 class="footer-heading">{{ site.title }}</h2>
 
-    <!--div class="made-by">
-      <p>made by</p>
-      <a href="http://www.tailored-tunes.com" target="_blank">
-        <img src="{{ site.baseurl }}/assets/tatu-logo.png" alt="Tailored Tunes" title="Tailored Tunes" height="80" width="80" /></a>
-      </a>
-      <p>Tailored Tunes</p>
-    </div-->
+    <div class="email">
+      <ul class="contact-list">
+        <li> Send us recommendations at: </li>
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      </ul>
+    </div>
 
     <div class="authors">
         <div class="author">
-          <figure>
-          <img src="{{ author1.photo }}" height="70" width="70" />
-          <figcaption>
-            <a href="http://www.twitter.com/{{ author1.twitter }}" target="_blank">
-              @{{ author1.twitter }}
-            </a>
-          </figcaption>
-        </figure>
+          <a href="http://www.twitter.com/{{ author1.twitter }}" target="_blank">
+            <figure>
+              <img src="{{ author1.photo }}" height="80" width="80" />
+              <figcaption>
+                  @{{ author1.twitter }}
+              </figcaption>
+            </figure>
+          </a>
         </div>
         
 
         <div class="author">
-          <figure>
-            <img src="{{ author2.photo }}" height="70" width="70" />
-            <figcaption>
-              <a href="http://www.twitter.com/{{ author2.twitter }}" target="_blank">
-                @{{ author2.twitter }}
-              </a>
-            </figcaption>
-          </figure>
+          <a href="http://www.twitter.com/{{ author2.twitter }}" target="_blank">
+            <figure>
+              <img src="{{ author2.photo }}" height="80" width="80" />
+              <figcaption>
+                  @{{ author2.twitter }}
+              </figcaption>
+            </figure>
+          </a>
         </div>
 
         <div class="author">
-          <figure>
-            <img src="{{ author3.photo }}" height="70" width="70" />
-            <figcaption>
-              <a href="http://www.twitter.com/{{ author3.twitter }}" target="_blank">
-                @{{ author3.twitter }}
-              </a>
-            </figcaption>
-          </figure>
+          <a href="http://www.twitter.com/{{ author3.twitter }}" target="_blank">
+            <figure>
+              <img src="{{ author3.photo }}" height="80" width="80" />
+              <figcaption>
+                  @{{ author3.twitter }}
+              </figcaption>
+            </figure>
+          </a>
         </div>
-      </div>
+    </div>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li> Send us recommendations at: </li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+    <div class="made-by">
+      <a href="http://www.tailored-tunes.com" target="_blank" class="no-decoration" >
+        <figure>
+          <img src="{{ site.baseurl }}/assets/tatu-logo.png" alt="Tailored Tunes" title="Tailored Tunes" height="80" width="80" />
+          <figcaption>
+              Tailored Tunes
+          </figcaption>
+        </figure>
+      </a>
+    </div>
 
-      <div class="footer-col  footer-col-2">
+    <div class="socialBox">
         <p class="followus">Follow us on</p>
         <ul class="social-media-list">
           {% if site.github_username %}
@@ -83,12 +85,17 @@
             </a>
           </li>
           {% endif %}
+          
           <li>
             <p class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">
             <img src="{{ site.baseurl }}/assets/rss.png" alt="RSS" title="RSS" height="25" width="25" /></a></p>
           </li>
         </ul>
       </div>
+
+    <div class="footer-col-wrapper">
+
+
 
       
     </div>

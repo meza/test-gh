@@ -14,12 +14,15 @@
     text-align: center;
 }
 
-.social-media-list {
-    display: inline-flex;
-}
-
 .followus {
     margin-bottom: 0;
+    text-align: center;
+}
+
+.socialBox {
+    float: left;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .contact-list,
@@ -27,13 +30,19 @@
     list-style: none;
     margin-left: 0;
 
-    li {
-        margin-right: 10px;
+    li:nth-child(2) {
+        margin: 0 10px;
     }
 
     a {
         text-decoration: none;
     }
+}
+
+.social-media-list {
+    display: flex;
+    margin: 0 auto;
+    width: 95px;
 }
 
 .contact-list a,
@@ -42,14 +51,15 @@
 }
 
 .made-by {
-    float: right;
-    // padding-left: $spacing-unit / 2;
-    position: relative;
     text-align: center;
 
     p:last-child {
         font-size: .8em;
         margin-top: .7em;
+    }
+
+    img {
+        margin: 0 auto;
     }
 }
 
@@ -63,7 +73,7 @@
 .footer-col {
     float: left;
     margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    // padding-left: $spacing-unit / 2;
 }
 
 .footer-col-1 {
@@ -81,9 +91,29 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
-.authors {
+.email {
+    margin-top: 20px;
     text-align: center;
-    width: 100%;
+}
+
+.email,
+.made-by {
+    float: left;
+    width: 25%;
+}
+
+.no-decoration {
+    text-decoration: none;
+
+    figcaption {
+        color: $dflt-gray;
+    }
+}
+
+.authors {
+    float: left;
+    text-align: center;
+    width: 50%;
 
     .author {
         display: inline-flex;
@@ -94,7 +124,15 @@
         }
 
         &:nth-child(2) {
-            margin: 0 20px;
+            margin: 0 4%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        figcaption {
+            color: $dflt-gray;
         }
     }
 }
