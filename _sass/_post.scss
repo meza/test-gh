@@ -49,11 +49,20 @@
     .post--header,
     .post--summary,
     .pictureWindow {
-        width: 50%;
-
         @include max-media($on-laptop) {
-            width: 100%;
+            width: 100%!important;
         }
+    }
+}
+
+.pictureWindow {
+    float: left;
+    height: 100%;
+
+    @include max-media($on-laptop) {
+        float: none;
+        height: 250px;
+        width: 100%!important;
     }
 }
 
@@ -69,9 +78,10 @@
     }
 
     .post--header,
-    .post--summary,
-    .pictureWindow {
-        float: left;
+    .post--summary {
+        @include min-media($on-laptop) {
+            float: left;
+        }
     }
 
     .pictureWindow {
@@ -98,9 +108,12 @@
         cursor: pointer;
         height: 37px;
         padding: 0;
-        position: relative;
-        top: 383px;
         transition: background-color .1s;
+
+        @include min-media($on-laptop) {
+            position: relative;
+            top: 383px;
+        }
 
         &:hover {
             background-color: $tatu-dark!important;
@@ -120,8 +133,6 @@
         }
 
         @include max-media($on-laptop) {
-            float: left;
-            position: initial;
             width: 100%;
         }
     }
