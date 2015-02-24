@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "24/02/2015 - Monday"
+date:   2015-02-24 19:00:00
+categories: music, programming
+
+articles:
+ -
+   title: "Musikki opens up real-time music database to app developers"
+   author: "meza"
+   summary: "This might be a good asset for our cause at Tailored Tunes. Some music providers don't share crucial
+     data about songs, but if we could query them from an API like this, we could enhance our offerings a lot!"
+   categories:
+     - "music"
+     - "programming"
+   url: "http://thenextweb.com/apps/2015/02/24/musikki-opens-up-real-time-music-database-to-app-developers/"
+   picture: "http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2015/02/Musikki-798x310.jpg"
+   size: 1
+---
