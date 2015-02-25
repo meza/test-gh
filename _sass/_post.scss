@@ -45,7 +45,9 @@
     }
 }
 
-.post-box:not(.nopic) {
+.post-box {
+    width: 100%;
+    
     .post--header,
     .post--summary,
     .pictureWindow {
