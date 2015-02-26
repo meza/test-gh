@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "25/02/2015 - Wednesday"
+date:   2015-02-25 19:00:00
+categories: frontend, programming
+
+articles:
+ -
+   title: "Frontend Guidelines"
+   author: "meza"
+   summary: "So working with HTML has evolved over the past years, but we got the old habits engraved so much,
+   that we tend to keep to them. Here's a list of methods we need to lose and some to learn!"
+   categories:
+     - "frontend"
+     - "programming"
+   url: "https://github.com/bendc/frontend-guidelines"
+   size: 1
+ -
+   title: "Sublime Text packages for Front-end Development"
+   author: "designhorf"
+   summary: "My favourite text editor is Sublime Text. This is a long list of packages with some really
+   useful tips. I've found a couple of very good ones and hope you'll find some as well."
+   categories:
+     - "frontend"
+     - "programming"
+   url: "http://vilcins.lv/blog/2015/Sublime-Text-packages-for-Front-end-Development/"
+   size: 1
+---
