@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "26/02/2015 - Thursday"
+date:   2015-02-26 19:00:00
+categories: frontend, programming, computer
+
+articles:
+ -
+   title: "Clocks"
+   author: "designhorf"
+   summary: "And again a post about css animations. This article shows us how to make a clock using html, css
+     and a bit of javascript."
+   categories:
+     - "frontend"
+     - "programming"
+   url: "https://cssanimation.rocks/clocks/"
+   size: 1
+ -
+   title: "What you need to know about HTTP/2"
+   author: "meza"
+   summary: "Yet another article about HTTP2. This one summarizes all we need to know about it, in a less geeky way."
+   categories:
+     - "computer"
+   url: "http://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/"
+   picture: "http://hss-prod.hss.aol.com/hss/storage/midas/cb0e8e0bea89af69865c8d26478ff742/200919157/171652%252C1205319295%252C9.jpg"
+   size: 1
+---
