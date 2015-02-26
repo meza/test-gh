@@ -196,7 +196,6 @@
 }
 
 .col-1 {
-
     @include mq($on-laptop, $mDesktop) {
         width: 48%;
     }
@@ -207,6 +206,12 @@
 
     @include min-media($wDesktop) {
         width: 18%;
+    }
+}
+
+.col-1.nopic.xtra {
+    @include mq($desktop, $mDesktop) {
+        width: 23%;
     }
 }
 

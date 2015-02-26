@@ -6,11 +6,20 @@
 {% assign calcSize = 100|divided_by:pictureSize %}
 {% assign textSize = 100|minus:calcSize %}
 
+{% assign limit = 210 %}
+
+{% assign textSum = article.title.size|plus:article.summary.size %}
+{% if textSum < limit %}
+	{% assign extraClass = 'xtra' %}
+{% else %}
+	{% assign extraClass = '' %}
+{% endif %}
+
 {% if article.picture or article.localpicture %}
 	<article class="post-box col-{{ pictureSize }}">
 		{% assign textBoxSize = '50%' %}
 {% else %}
-	<article class="post-box col-{{ totalSize }} nopic">
+	<article class="post-box col-{{ totalSize }} nopic {{ extraClass }}">
 		{% assign textBoxSize = '100%' %}
 {% endif %}
 
