@@ -29,14 +29,18 @@ layout: null
                     <p><code>{{ article.snippet }}</code></p>
                     {% endif %}
                     <p>{{ article.summary | xml_escape }}
-                    </br><span rel="author">By:
+                    </br>
+                    <span rel="author">By:
                     {% if site.data.writers[article.author].twitter %}
-                    <a href="{{site.data.writers[article.author].twitter}}" target="_blank">{{ article.author }}</a>
+                    <a href="http://twitter.com/{{site.data.writers[article.author].twitter}}" target="_blank">{{ article.author }}</a>
                     {% else %}
                         {{ article.author }}
                     {% endif %}
+                    {% if site.data.writers[article.author].photo %}
+                        <a href="http://twitter.com/{{site.data.writers[article.author].twitter}}" target="_blank"><img src="{{site.data.writers[article.author].photo}}" height="25" width="25" /></a>
+                    {% endif %}
                     </span> </p>
-                    <p><a href="{{article.url}}" target="_blank">Read recommendation article</a></p>
+                    <p><a href="{{article.url}}" target="_blank">Open recommended article</a></p>
                     <img src="http://www.google-analytics.com/collect?v=1&tid=UA-36818483-3&t=event&ec=RSS&ea=view&el={{ post.url | prepend: site.baseurl | UrlEncode }}&cid=0001"/>
                     <hr />
                 ]]>
