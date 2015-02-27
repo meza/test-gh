@@ -23,7 +23,7 @@ layout: null
                         <a href="{{article.url}}" target="_blank"><img src="{{article.picture}}" width="400"/></a></br>
                     {% endif %}
                     {% if article.quote %}
-                    <p><blockquote><i>{{ article.quote }}</i></blockquote></p>
+                    <p><blockquote><i>"{{ article.quote }}"</i></blockquote></p>
                     {% endif %}
                     {% if article.snippet %}
                     <p><code>{{ article.snippet }}</code></p>
