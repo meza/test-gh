@@ -15,8 +15,15 @@
 	{% assign extraClass = '' %}
 {% endif %}
 
+{% assign textSum2 = article.title.size|plus:article.summary.size %}
+{% if textSum2 > limit %}
+	{% assign biggerSpace = 'wide' %}
+{% else %}
+	{% assign biggerSpace = '' %}
+{% endif %}
+
 {% if article.picture or article.localpicture %}
-	<article class="post-box col-{{ pictureSize }}">
+	<article class="post-box col-{{ pictureSize }} {{ biggerSpace }}">
 		{% assign textBoxSize = '50%' %}
 {% else %}
 	<article class="post-box col-{{ totalSize }} nopic {{ extraClass }}">

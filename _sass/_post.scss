@@ -95,11 +95,11 @@
         text-align: center;
 
         h1 {
-            font-size: 1.3em;
+            font-size: 1.2em;
             font-weight: 600;
             padding: 1em 1em 0 1em;
 
-            @include min-media($mmDesktop) {
+            @include min-media($wDesktop) {
                 font-size: 1.4em;
             }
         }
@@ -232,6 +232,12 @@
 .col-2.nopic {
     @include mq($on-laptop ,$desktop) {
         width: 48%;
+    }
+}
+
+.col-2.wide {
+    @include mq($desktop, $mDesktop) {
+        width: 73%;
     }
 }
 
