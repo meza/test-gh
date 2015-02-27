@@ -45,7 +45,9 @@
     }
 }
 
-.post-box:not(.nopic) {
+.post-box {
+    width: 100%;
+    
     .post--header,
     .post--summary,
     .pictureWindow {
@@ -77,6 +79,10 @@
         height: 420px;
     }
 
+    @include min-media($imac) {
+        margin: 0 .5% 2em;
+    }
+
     .post--header,
     .post--summary {
         @include min-media($on-laptop) {
@@ -93,9 +99,13 @@
         text-align: center;
 
         h1 {
-            font-size: 1.4em;
+            font-size: 1.2em;
             font-weight: 600;
             padding: 1em 1em 0 1em;
+
+            @include min-media($wDesktop) {
+                font-size: 1.4em;
+            }
         }
     }
 
@@ -190,7 +200,6 @@
 }
 
 .col-1 {
-
     @include mq($on-laptop, $mDesktop) {
         width: 48%;
     }
@@ -198,17 +207,71 @@
     @include min-media($mDesktop) {
         width: 23%;
     }
+
+    @include min-media($wDesktop) {
+        width: 18%;
+    }
+
+    @include min-media($imac) {
+        width: 15%;
+    }
+}
+
+.col-1.nopic.xtra {
+    @include mq($desktop, $mDesktop) {
+        width: 23%;
+    }
 }
 
 .col-2 {
+    @include mq($desktop, $mDesktop) {
+        width: 48%;
+    }
+
     @include min-media($mDesktop) {
         width: 48%;
+    }
+
+    @include min-media($wDesktop) {
+        width: 38%;
+    }
+
+    @include min-media($imac) {
+        width: 31%;
+    }
+}
+
+.col-2.nopic {
+    @include mq($on-laptop ,$desktop) {
+        width: 48%;
+    }
+}
+
+.col-2.wide {
+    @include mq($desktop, $mDesktop) {
+        width: 73%;
+    }
+
+    @include min-media($imac) {
+        width: 47%;
+    }
+
+    @include min-media($imac) {
+        width: 31%;
     }
 }
 
 .col-3 {
     @include min-media($mDesktop) {
         width: 73%;
+    }
+
+    @include min-media($wDesktop) {
+        width: 58%;
+    }
+
+    @include min-media($imac) {
+        width: 47%;
     }
 }
 
