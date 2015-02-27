@@ -79,6 +79,10 @@
         height: 420px;
     }
 
+    @include min-media($imac) {
+        margin: 0 .5% 2em;
+    }
+
     .post--header,
     .post--summary {
         @include min-media($on-laptop) {
@@ -207,6 +211,10 @@
     @include min-media($wDesktop) {
         width: 18%;
     }
+
+    @include min-media($imac) {
+        width: 15%;
+    }
 }
 
 .col-1.nopic.xtra {
@@ -227,6 +235,10 @@
     @include min-media($wDesktop) {
         width: 38%;
     }
+
+    @include min-media($imac) {
+        width: 31%;
+    }
 }
 
 .col-2.nopic {
@@ -239,6 +251,14 @@
     @include mq($desktop, $mDesktop) {
         width: 73%;
     }
+
+    @include min-media($imac) {
+        width: 47%;
+    }
+
+    @include min-media($imac) {
+        width: 31%;
+    }
 }
 
 .col-3 {
@@ -248,6 +268,10 @@
 
     @include min-media($wDesktop) {
         width: 58%;
+    }
+
+    @include min-media($imac) {
+        width: 47%;
     }
 }
 

@@ -157,6 +157,10 @@ pre {
     margin-right: auto;
     margin-left: auto;
     @extend %clearfix;
+
+    @include min-media($imac) {
+        max-width: 2500px;
+    }
 }
 
 
