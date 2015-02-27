@@ -20,23 +20,25 @@ layout: null
             <description>
                 <![CDATA[
                     {% if article.picture %}
-                    <a href="{{article.url}}" target="_blank"><img src="{{article.picture}}" width="400"/></a></br>
+                        <a href="{{article.url}}" target="_blank"><img src="{{article.picture}}" width="400"/></a></br>
                     {% endif %}
                     {% if article.quote %}
-                    <p><blockquote>{{ article.quote }}</blockquote></p>
+                    <p><blockquote><i>"{{ article.quote }}"</i></blockquote></p>
                     {% endif %}
                     {% if article.snippet %}
                     <p><code>{{ article.snippet }}</code></p>
                     {% endif %}
-                    <p>{{ article.summary | xml_escape }}
-                    </br><span rel="author">By:
+                    <p>{{ article.summary | xml_escape }}</p>
+                    <p><span rel="author">By: 
                     {% if site.data.writers[article.author].twitter %}
-                    <a href="{{site.data.writers[article.author].twitter}}" target="_blank">{{ article.author }}</a>
+                    <a href="http://twitter.com/{{site.data.writers[article.author].twitter}}" target="_blank">{{ article.author }}</a>
                     {% else %}
                         {{ article.author }}
                     {% endif %}
-                    </span> | <a href="{{article.url}}" target="_blank">Read article</a></p>
+                    </span></p>
+                    <p><a href="{{article.url}}" target="_blank">Open recommended article</a></p>
                     <img src="http://www.google-analytics.com/collect?v=1&tid=UA-36818483-3&t=event&ec=RSS&ea=view&el={{ post.url | prepend: site.baseurl | UrlEncode }}&cid=0001"/>
+                    <hr />
                 ]]>
             </description>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
