@@ -8,8 +8,8 @@ articles:
  -
    title: "Beautiful Testing"
    author: matta
-   summary: "This is the first chapter of the \"Beautiful Testing\" book. I think everybody MUST READ this
-    chapter who worked / works / will work with a software tester. Because \"I think this is the beginning of a beautiful friendship\". :)"
+   summary: "This is the first chapter of the \"Beautiful Testing\" book. Everybody MUST READ this
+    who worked / works / will work with software testers. Because \"I think this is the beginning of a beautiful friendship\". :)"
    categories:
      - testing
    quote: "Software testers know they’re the \"dark side of the force.\" They often joke about it (\"Come to the Dark Side—We Have Cookies\")."
