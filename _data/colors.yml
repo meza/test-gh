@@ -26,6 +26,10 @@ programming:
   color: "#4697e0"
   name: "programming"
 
+testing:
+  color: "#4697e0"
+  name: "testing"
+
 javascript:
   color: "#4697e0"
   name: "javascript"

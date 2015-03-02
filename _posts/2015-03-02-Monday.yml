@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "02/03/2015 - Monday"
+date:   2015-03-02 19:00:00
+categories: testing, javascript, programming
+
+articles:
+ -
+   title: "Beautiful Testing"
+   author: matta
+   summary: "This is the first chapter of the \"Beautiful Testing\" book. I think everybody MUST READ this
+    chapter who worked / works / will work with a software tester. Because \"I think this is the beginning of a beautiful friendship\". :)"
+   categories:
+     - testing
+   quote: "Software testers know they’re the \"dark side of the force.\" They often joke about it (\"Come to the Dark Side—We Have Cookies\")."
+   url: https://www.safaribooksonline.com/library/view/beautiful-testing/9780596806934/ch01.html
+   size: 1
+ -
+   title: What the heck is the event loop anyway?
+   author: meza
+   summary: "Essential info about how JavaScript actually works. This is a must-see for everyone involved in web development."
+   categories:
+     - javascript
+     - programming
+   url: http://latentflip.com/loupe/
+   size: 1
+---
