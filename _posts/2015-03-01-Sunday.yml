@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "01/03/2015 - Sunday"
+date:   2015-03-01 19:00:00
+categories: frontend, design
+
+articles:
+ -
+   title: "Web Typography for non-designers - Presslabs"
+   author: "meza"
+   summary: "Finally a nice collection of rules of thumb for web typography. I knew of the existence of these
+    concepts, but never actually understood or studied them. With this list, we can make more scientific decisions with our designs."
+   categories:
+     - "frontend"
+     - "design"
+   url: "http://www.presslabs.com/blog/web-typography-for-non-designers/"
+   picture: "http://cdn.presslabs.com/wp-content/uploads/2015/02/Blog_WebTypo_V12.png"
+   size: 1
+---
