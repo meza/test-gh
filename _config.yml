@@ -11,4 +11,4 @@ baseurl:
 # Build settings
 markdown: kramdown
 exclude: [vendor]
-paginate: 30
+paginate: 7
