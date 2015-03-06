@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "05/03/2015 - Thursday"
+date:   2015-03-05 19:00:00
+categories: history
+
+articles:
+ -
+   title: London's Lost Pneumatic Messaging Tubes
+   author: meza
+   summary: "It's always nice to know where we're coming from and the problems we're trying to solve today are
+    not at all different from the ones our ancestors were solving. Instead of vacuum tubes (mostly), we're
+    using digital protocols, but the main idea stays the same. Get information from A to B as quick as possible.
+    It's quite fascinating how much we've evolved with our solution, but not the problem. P.S.: I never
+    thought these things were real when I saw them on cartoons!"
+   categories:
+     - history
+   url: http://lapsedhistorian.com/get-blower-londons-forgotten-pneumatic-messaging-tubes/
+   picture: http://res.cloudinary.com/boomstick-media-ltd/image/upload/v1423914315/tubedroppoint_efoh6k.jpg
+   size: 2
+---
