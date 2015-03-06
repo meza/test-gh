@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "04/03/2015 - Wednesday"
+date:   2015-03-04 19:00:00
+categories: design
+
+articles:
+ -
+   title: The 5 pillars of interaction design
+   author: meza
+   summary: "Great tips on how to go about interaction design. I'd recommend it to every team to try to follow
+    these steps at least once to the letter to see how it feels like to do so. It requires discipline, but
+    yields great results."
+   categories:
+     - design
+   url: http://thenextweb.com/dd/2015/03/03/the-5-pillars-of-interaction-design
+   picture: http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2015/03/IXDA-Columbus-520x388.jpg
+   size: 1
+---
