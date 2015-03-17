@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "11/03/2015 - Wednesday"
+date:   2015-03-11 19:00:00
+categories: science
+
+articles:
+ -
+   title: The first round-the-world solar-powered flight
+   author: meza
+   summary: "A piece of history has been made on the 9th, by the first manned solar power round the world flight taking off from Abu Dhabi."
+   categories:
+     - science
+   url: http://venturebeat.com/2015/03/09/the-first-manned-solar-powered-round-the-world-flight-has-taken-off-today/
+   picture: http://i1.wp.com/venturebeat.com/wp-content/uploads/2015/03/Solar-Impulse.jpg?fit=780%2C9999
+   size: 1
+---
