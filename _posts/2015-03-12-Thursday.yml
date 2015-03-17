@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "12/03/2015 - Thursday"
+date:   2015-03-12 19:00:00
+categories: design, frontend
+
+articles:
+ -
+   title: "Web UI Design for the Human Eye"
+   author: meza
+   summary: "A free e-book on UX design."
+   quote: "Topics include practical use of Gestalt, applying similarity and contrast, creating relationships with space, emotions of color, and more."
+   categories:
+     - design
+   url: http://uxpin.us2.list-manage.com/track/click?u=5603b43723dab344f7eec85df&id=8faba5db36&e=cc8f8306f0
+   picture: "http://media.creativebloq.futurecdn.net/sites/creativebloq.com/files/images/2015/03/eye-1.jpg"
+   size: 1
+ -
+   title: "Sass Mixins vs Extends: The Data"
+   author: designhorf
+   summary: "An interesting comparison between sass mixins and extends. Which is the better choice and why? This article try to help for us to decide and shows some test results."
+   categories:
+     - frontend
+   url: https://tech.bellycard.com/blog/sass-mixins-vs-extends-the-data/
+   picture: "https://tech.bellycard.com/assets/blog/sass-mixins-vs-extends-the-data/mixins-vs-extends.jpg?1425909707"
+   size: 1
+---
