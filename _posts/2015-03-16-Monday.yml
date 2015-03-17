@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "16/03/2015 - Monday"
+date:   2015-03-16 19:00:00
+categories: frontend
+
+articles:
+ -
+   title: "The simplest utf8 charmap"
+   author: meza
+   summary: "Before we start designing icons, we should know what is already available within the UTF8 realm. Here's an overview of all the chars!"
+   categories:
+     - frontend
+   url: http://utf8charmap.herokuapp.com/
+   size: 1
+---

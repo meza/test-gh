@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "17/03/2015 - Tuesday"
+date:   2015-03-17 19:00:00
+categories: frontend
+
+articles:
+ -
+   title: "Species-in-pieces"
+   author: designhorf
+   summary: "This is an interactive exhibition (css animations) where you can find informations about 30 of the world's most interesting but endangered  species. You can download the pictures in different resolutions as well."
+   categories:
+     - frontend
+   url: http://www.species-in-pieces.com/
+   picture: "http://www.species-in-pieces.com/img/assets/wallpapers/1366x768/1366x768_frog.png"
+   size: 1
+---
