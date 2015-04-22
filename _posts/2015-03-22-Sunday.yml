@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "22/03/2015 - Sunday"
+date:   2015-03-22 19:00:00
+categories: frontend
+
+articles:
+ -
+   title: "AniCollection"
+   author: meza
+   summary: "A very nice showcase of css animations. Having a selection like this makes it way simple to
+      choose the  right one for the task at hand."
+   categories:
+     - frontend
+   url: http://anicollection.github.io
+   size: 1
+---
