@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "18/03/2015 - Wednesday"
+date:   2015-03-18 19:00:00
+categories: frontend
+
+articles:
+ -
+   title: "Epic Favicon Generator"
+   author: meza
+   summary: "A nifty little tool to generate all the favicons!"
+   categories:
+     - frontend
+   url: https://epicfavicongenerator.com/
+   size: 1
+---
