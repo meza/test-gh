@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "19/03/2015 - Thursday"
+date:   2015-03-19 19:00:00
+categories: design, product
+
+articles:
+ -
+   title: "The best interface is no interface"
+   author: meza
+   summary: "I know that confirmation bias is a factor in this, but it's an interesting article nevertheless.
+      It also describes the idea behind Tailored Tunes, and why we're not so keen on creating an app, or any
+      interface apart from your global setup. You should be able to use our service without all that
+      cumbersome finger movement."
+   categories:
+     - design
+     - product
+   url: http://www.theverge.com/2015/3/17/8103593/golden-krishna-best-interface-is-no-interface-excerpt
+   size: 1
+---
