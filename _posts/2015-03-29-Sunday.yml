@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "29/03/2015 - Sunday"
+date:   2015-03-29 19:00:00
+categories: design
+
+articles:
+ -
+   title: "A guide to visual design"
+   author: meza
+   summary: "A guide to visual design that we all should learn from. We need to be able to critique our own work, and question everything. This gives a general idea on what to look out for and how to think about visual design."
+   categories:
+     - design
+   url: http://www.visualmess.com/index.html
+   size: 1
+---
