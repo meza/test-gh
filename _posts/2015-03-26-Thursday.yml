@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "26/03/2015 - Thursday"
+date:   2015-03-26 19:00:00
+categories: programming
+
+articles:
+ -
+   title: "HTTP Diff"
+   author: meza
+   summary: "Sometimes we tend to spend hours on debugging weird issues. With this tool, creating automated tests around requests might just get easier."
+   categories:
+     - programming
+   url: https://github.com/jgrahamc/httpdiff
+   size: 1
+---
